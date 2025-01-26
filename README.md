@@ -1,5 +1,5 @@
 # MeshAll42_MIT-AI2
-BLE-Komunikation mit Geräten - Erzeugt mit dem MIT-APP-Inventor 2
+**BLE-Komunikation mit Geräten - Erzeugt mit dem MIT-APP-Inventor 2 (MIT-AI2)**
 
 ## Meine Vision
 • einfache APP-Erstellung  
