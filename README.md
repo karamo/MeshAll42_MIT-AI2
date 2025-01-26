@@ -33,6 +33,6 @@ Bestehende rudimentäre Funktionen:
 • Connect  
 • Start der Verbindung mit "Hello"  
 • Empfangen der Parameter-Einstellungen  
-• Empfangen von Msg
+• Empfangen von Msg  
 • Senden von Msg  
 ![grafik](https://github.com/user-attachments/assets/34e9df30-c42c-4cae-92f2-f0ba4e84f871)
