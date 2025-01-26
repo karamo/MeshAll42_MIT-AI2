@@ -9,7 +9,7 @@ BLE-Komunikation mit Geräten - Erzeugt mit dem MIT-APP-Inventor 2
 • Diese meine Sensoren sollen unter **MicroPython** laufen
 
 ## Vorgeschichte
-Viele übliche Entwicklungsumgebungen für APPs (Android/IOs) bedürfen einen nicht unerheblichen Aufwand.  
+Viele übliche Entwicklungsumgebungen für APPs (Android/iOS) bedürfen eines nicht unerheblichen Aufwands.  
 Für einfache Anwendungen war mir diese Aufwand zu groß und ich suchte nach einfacheren Möglichkeiten.  
 Da fand ich dann den **MIT-APP-Inventor 2 (AI2)**, der meiner Art von Softwareentwicklung sehr entsprach, 
 da ich schon Jahrzehnte lang Anwendungen mit Delphi entwickle.  
