@@ -43,7 +43,13 @@ Zu diesem Zeitpunkt wird die Auswahl auf eine gültige **MeshCom-FW** getestet u
 Nun kann der Versuch eines Verbindungsaufbaus (connect) unternommen werden.  
 ![grafik](https://github.com/user-attachments/assets/44bfafd8-753e-4fc6-8717-aa5f9d6d8852)
 
-Dieser Verbindungsaufbau kann aber misslingen:  
+Dieser Verbindungsaufbau kann aber misslingen: **FDM := "CX"**  
+![grafik](https://github.com/user-attachments/assets/ef82e5bf-7d05-48b0-bcdb-2535adc3b47a)  
+und zurück für eine neue Auswahl.
+
+Falls der Verbindungsaufbau gelingt, ...  
+
+
 ...
 
 ___
