@@ -1,4 +1,7 @@
-# BLE-Scan & Connect
+# BLE-Scan & Connect (DEBUG-Version)
+Die DEBUG-Version ist für die grundsätzliche Entwicklung und das Testen der Funktionalität vorgesehen und
+ist daher noch nicht auf schönes optisches Erscheinungsbild hin optimiert.
+
 Der 1. Schritt zu einer BLE-Kommunikation ist das Scannen von BLE-Geräten in der Nähe.  
 https://de.wikipedia.org/wiki/Bluetooth_Low_Energy  
 *"Alle Bluetooth-LE-Geräte senden unabhängig voneinander kurze Advertising Events (Aufmerksamkeitshinweise)
@@ -19,9 +22,17 @@ Anzeigen und Eingabefeldern u.a.
 Es ist das Ziel eines guten MMI (Mensch-Maschine-Interface), die Bedienung so sicher wie möglich zu machen und
 Bedienungsfehler größtmöglich auszuschließen. Das erfolgt dadurch, dass nur jene Elemente freigegeben werden,
 die im jeweiligen Zustand auch sinnvoll und zulässig sind. Dies erfolgt auch durch Implementierung einer FSM
-(Finiten State Machine), wobei je nach Zustand die einzelnen Elemente auf `visible true|false` bzw. `hidden`
+(Finiten State Machine), wobei je nach Zustand die einzelnen Elemente auf `enabled true|false` bzw. `visible true|false`
 geschaltet werden. Diese Absicherung stellt einen erheblichen Teil der Logik dar.
 
+![grafik](https://github.com/user-attachments/assets/41e80a3e-afb3-40a9-a1d8-1ce7e78dcb71)
+
+Hier wird die **FSM** auf **{S}** gesetzt. Die für diesen Zustand, aber auch allen anderen Zuständen, erforderliche
+Verriegelung, dh. `enabled` und `visible` der einzelnen Elemente übernimmt die Prozedur **setFSM**.
+
+### Procedure (setFSM) bisher
+
+![grafik](https://github.com/user-attachments/assets/f6d2bc04-d97d-4fe8-950c-97b2475b3cf4)
 
 ___
 ***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
