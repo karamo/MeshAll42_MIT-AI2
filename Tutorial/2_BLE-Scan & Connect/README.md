@@ -5,3 +5,6 @@ https://de.wikipedia.org/wiki/Bluetooth_Low_Energy
 auf einem der drei Advertising Channels (effektiv Anmeldekanäle). Anschließend lauscht das Gerät auf diesem Kanal
 nach einer Verbindungsanfrage, worauf dann auf einen der verbliebenen 37 Kanäle gewechselt wird, um einen
 größeren Datenblock vom Gerät zu erhalten."*  
+
+___
+***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
