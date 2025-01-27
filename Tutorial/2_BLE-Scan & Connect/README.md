@@ -1,4 +1,4 @@
-# BLE-Scan & Connect (DEBUG-Version)
+# BLE-Scan & Connect & DisConnect (DEBUG-Version)
 Die DEBUG-Version ist für die grundsätzliche Entwicklung und das Testen der Funktionalität vorgesehen und
 ist daher noch nicht auf schönes optisches Erscheinungsbild hin optimiert.
 
@@ -43,19 +43,21 @@ Zu diesem Zeitpunkt wird die Auswahl auf eine gültige **MeshCom-FW** getestet u
 Nun kann der Versuch eines Verbindungsaufbaus (connect) unternommen werden.  
 ![grafik](https://github.com/user-attachments/assets/44bfafd8-753e-4fc6-8717-aa5f9d6d8852)
 
-Dieser Verbindungsaufbau kann aber misslingen: **FDM := "CX"**  
+Dieser Verbindungsaufbau kann aber misslingen: **FSM := "CX"**  
+Dann zurück für eine neue Auswahl.  
 ![grafik](https://github.com/user-attachments/assets/ef82e5bf-7d05-48b0-bcdb-2535adc3b47a)  
-und zurück für eine neue Auswahl.
 
-Falls der Verbindungsaufbau gelingt, ...  
+Oder der Verbindungsaufbau gelingt, dann wird sofort ein neues MTU = 250 ausgehandelt.
+Und weitere Daten werden verfügbar. Unter anderem auch die `DeviceServices` und `DeviceCharacteristics`.
+**FSM := "CC"**  
+![grafik](https://github.com/user-attachments/assets/58e61693-817d-43f1-b665-e8f0a81a3fa9)
 
+Die neu verhandelte `MTUvalue` wird angezeigt:  
+![grafik](https://github.com/user-attachments/assets/f085f9eb-cc12-4780-9c12-964fd728e3ed)
 
-...
-
-___
-### Procedure (setFSM) bisher
-
-
+## 5) DisConnect
+Bei einem **DisConnect** wird ein neuer **Scan** oder **Connect** möglich. **FSM := "0"**  
+![grafik](https://github.com/user-attachments/assets/26db232d-390a-454c-9377-76f3ad6ce38a)
 
 ___
 ***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
