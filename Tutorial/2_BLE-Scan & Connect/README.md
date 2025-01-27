@@ -9,7 +9,7 @@ größeren Datenblock vom Gerät zu erhalten."*
 ## 1) UUID
 Für die Kommunikation sind UUIDs erforderlich. Bei einem bekanntem BLE-Gerät ist eine einfache Möglichkeit,
 die UUIDs als globale Variablen bereitzustellen und in der Folge zu verwenden. Dabei handelt es sich um das
-**Nordic UART Service** als **PRIMARY SERVICE** und der **TX Characteristic** und **RX Characteristic**.
+**Nordic UART Service** als **PRIMARY SERVICE** mit der **TX Characteristic** und **RX Characteristic**.
 
 ![blocks_0](https://github.com/user-attachments/assets/238ffce2-28a9-4cb2-8f8c-48a0bc33c1e8)
 
