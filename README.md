@@ -22,7 +22,7 @@ Hierfür gab es zwar schon viele mehr oder weniger gute Beispielprogramme, die a
 Bedürfnissen entsprachen und eigentlich nur Fragmente waren.  
 Um nicht auf 2 Baustellen gleichzeitig entwickeln und Fehler suchen zu müssen, habe ich mich an Stelle des Sensors für eine **MeshCom-Node** entschieden.
 Dabei gab es einige Hürden zu überwinden. Einerseits die Eigenheiten von BLE und andererseits die fehlende
-Dokumentation über die BLE-Kommunikation der **MeshCom FW** mit der **MeshCom-APP**.  
+Dokumentation über die spezielle BLE-Kommunikation der **MeshCom FW** mit der **MeshCom-APP**.  
 [TODO] Link zu **MeshCom**  
 Das Studium der Sourcen der FW und viele Tests & Tricks waren erforderlich.  
 ...
@@ -36,3 +36,6 @@ Bestehende rudimentäre Funktionen:
 • Empfangen von Msg  
 • Senden von Msg  
 ![grafik](https://github.com/user-attachments/assets/34e9df30-c42c-4cae-92f2-f0ba4e84f871)
+
+___
+***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
