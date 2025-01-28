@@ -16,3 +16,5 @@
 
 Empfangene Msg u.a. werden derzeit nur in der untersten Liste im Raw-Format angezeigt!
 
+___
+***:copyright: 28.1.2025 by OE3WAS - Wolfgang***
