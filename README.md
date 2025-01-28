@@ -27,17 +27,5 @@ Dokumentation über die spezielle BLE-Kommunikation der **MeshCom FW** mit der *
 Das Studium der Sourcen der FW und viele Tests & Tricks waren erforderlich.  
 ...
 
-Ein erster kleiner Vorgeschmack, woraus die **APP V0.8** derzeit besteht:  
-Bestehende rudimentäre Funktionen:  
-* BLE-Scan (allgemein)
-* Connect (allgemein)
-* Start der Verbindung mit "Hello" (MeshCom spezifisch)
-* Empfangen der Parameter-Einstellungen (MeshCom spezifisch)
-* Empfangen von Msg (allgemein & MeshCom spezifisch)
-* Senden von Msg (allgemen & MeshCom spezifisch)
-
-
-![grafik](https://github.com/user-attachments/assets/34e9df30-c42c-4cae-92f2-f0ba4e84f871)
-
 ___
-***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
+***:copyright: 28.1.2025 by OE3WAS - Wolfgang***
