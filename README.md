@@ -15,7 +15,7 @@ Da fand ich dann den **MIT-APP-Inventor 2 (AI2)**, der meiner Art von Softwareen
 da ich schon Jahrzehnte lang Anwendungen mit Delphi entwickle.  
 
 ## Realisierung
-Ohne irgendwelche Vorkenntnisse bez. BLE konnte ich mir innerhalb innerhalb von ein paar Tagen den Ablauf
+Ohne irgendwelche Vorkenntnisse bez. BLE konnte ich mir innerhalb von ein paar Tagen den Ablauf
 des **BLE-Scan** (suchen von BLE-Geräten) und **Connect** (verbinden mit einem BLE-Gerät) erarbeiten;
 ebenso das empfangen und senden von Strings.  
 Hierfür gab es zwar schon viele mehr oder weniger gute Beispielprogramme, die aber alle nicht meinen
