@@ -1,5 +1,5 @@
 # Break & FSM
-!!! Die Blöcke stellt nur den aktuellen Zustand der **V0.1.0** dar und sind u.U. unvollständig !!!
+!!! Die Blöcke stellt nur den aktuellen Zustand der **V0.1.2** dar und sind u.U. unvollständig !!!
 
 ## 1) Break = Abbruch
 Bei einem Abbruch einer Aktion sind - abhängig vom Zustand der FSM - gewisse Aktionen erforderlich und die FSM wird in einen neuen Zustand versetzt.  
@@ -11,4 +11,4 @@ von Funktionen und Daten getrennt in dem FSM-Block geregelt.
 ![grafik](https://github.com/user-attachments/assets/a9dee410-5aaf-4fbf-aac3-c7bb46d8edda)
 
 ___
-***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
+***:copyright: 28.1.2025 by OE3WAS - Wolfgang***
