@@ -1,4 +1,4 @@
-# BLE-Scan & Connect & DisConnect (DEBUG-Version)
+# BLE-Scan & Connect & DisConnect (Developer-Version)
 Die DEBUG-Version ist für die grundsätzliche Entwicklung und das Testen der Funktionalität vorgesehen und
 ist daher noch nicht auf schönes optisches Erscheinungsbild hin optimiert.
 
@@ -60,4 +60,4 @@ Bei einem **DisConnect** wird ein neuer **Scan** oder **Connect** möglich. **FS
 ![grafik](https://github.com/user-attachments/assets/26db232d-390a-454c-9377-76f3ad6ce38a)
 
 ___
-***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
+***:copyright: 28.1.2025 by OE3WAS - Wolfgang***
