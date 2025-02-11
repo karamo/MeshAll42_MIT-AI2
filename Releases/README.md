@@ -1,20 +1,22 @@
 # Android APP - Releases
 
-### MeshAll42_V0.1.2.apk
-1. Developer-Version = nur einfaches funktionales optisches Design
+### MeshAll42_V0_x_x.apk
+Die erste hier verfügbare Version wird folgende Funktionen beherrschen:
 
 <ins>Ablauf:</ins>  
 * **[SCAN]** Scannen von BLE-Geräten
 * **[CONNECT]** verbinden mit einem **MeshCom-Node**
-* **[Reg$]** registrieren für den Empfang von Strings
-* **{HELLO}** Start der Kommunikation
+  * **[Reg]** registrieren für den Empfang von Daten (automatisch)
+  * **{HELLO}** Start der Kommunikation (automatisch)
+  * empfangen der der Grundeinstellungen und teilweises Darstellen derselben (automatisch)
+* **[disCON]** Verbindung trennen - **!!! nicht vergessen !!!**
 
 <ins>weitere Möglichkeiten:</ins>
-* **[--info$]** senden Command `--info`
-* **[<=Send]** senden einer Msg aus Textfeld
-* **[disCONNECT]** Verbindung trennen - **!!! nicht vergessen !!!**
+* **[commands]** senden von verschiedenen Commands, zB. `--info` `--display off` `--display on` u.a.
+* **[<=Send]** senden einer Msg aus einem Eingabefeld
 
-Empfangene Msg u.a. werden derzeit nur in der untersten Liste im Raw-Format angezeigt!
+Empfangene Msg und andere Datenpakete werden decodiert und dargestellt.  
+Die Funktionalität der APP wird laufend erweitert.
 
 ___
-***:copyright: 28.1.2025 by OE3WAS - Wolfgang***
+***:copyright: 11.2.2025 by OE3WAS - Wolfgang***
