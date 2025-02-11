@@ -15,8 +15,8 @@ das optische Design behandeln werde.
 * [TODO] Links zu BLE Entstehung & Spezifizierung
 * **BLE-Scan** & "Was ist ohne Connect sichtbar?"
 * **Connect** & Abfrage von *Services** & **Characteristics**
-* **Receive** empfangen von Daten (Strings)
-* **Send** senden von Daten (Strings)
+* **Receive** empfangen von Daten (Strings,Bytes u.a.)
+* **Send** senden von Daten (Strings, Bytes u.a.)
 
 ___
-***:copyright: 27.1.2025 by OE3WAS - Wolfgang***
+***:copyright: 11.2.2025 by OE3WAS - Wolfgang***
