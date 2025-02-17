@@ -24,11 +24,11 @@ geschaltet werden. Diese Absicherung stellt einen erheblichen Teil der Logik dar
 Die erforderlichen Verriegelung, dh. `enabled` und `visible` der einzelnen Elemente für die jeweiligen Zustände
 übernimmt die Prozedur **setFSM**. 
 
-Bei tippen des Buttons **[SCAN]** beginnt des Scan-Prozess und die **FSM** wird auf **"S"** gesetzt.  
+Bei tippen des Buttons **[SCAN]** wird **ListViewBLE** gelöscht und der Scan-Prozess gestartet. **FSM := "S"**  
 ![grafik](https://github.com/user-attachments/assets/41e80a3e-afb3-40a9-a1d8-1ce7e78dcb71)
 
 Jedes gefundene BLE-Gerät wird in die `DeviceList` eingetragen. **FSM := "SF"**  
-Zu diesem Zeitpunt kann bereits eine Filterung der Geräte erfolgen, damit nur die gewünschten Typen angezeigt werden und zur auswahl stehen. 
+Zu diesem Zeitpunt kann bereits eine Filterung der Geräte erfolgen, damit nur die gewünschten Typen angezeigt werden und zur Auswahl stehen.  
 ![grafik](https://github.com/user-attachments/assets/efdbba3c-e587-425f-b33d-6b863f3938d8)
 
 ## 3) Select BLE-Device
@@ -45,7 +45,7 @@ Dieser Verbindungsaufbau kann aber misslingen: **FSM := "CX"**
 Dann zurück für eine neue Auswahl.  
 ![grafik](https://github.com/user-attachments/assets/ef82e5bf-7d05-48b0-bcdb-2535adc3b47a)  
 
-Oder der Verbindungsaufbau gelingt, dann wird sofort ein neues MTU = 250 ausgehandelt.
+Oder der Verbindungsaufbau gelingt, dann wird sofort ein neues MTU=250 ausgehandelt.
 Und weitere Daten werden verfügbar: `ConnectedDeviceName`, `DeviceServices` und `DeviceCharacteristics`.
 **FSM := "CC"**  
 ![grafik](https://github.com/user-attachments/assets/58e61693-817d-43f1-b665-e8f0a81a3fa9)
