@@ -19,8 +19,8 @@ Anzeigen, Eingabefeldern u.a.
 Es ist das Ziel eines guten MMI (Mensch-Maschine-Interface), die Bedienung so sicher wie möglich zu gestalten und
 Bedienungsfehler größtmöglich auszuschließen. Das erfolgt dadurch, dass nur jene Elemente freigegeben werden,
 die im jeweiligen Zustand auch sinnvoll und zulässig sind. Dies kann z.B. durch Implementierung einer FSM
-(Finiten State Machine) geschehen, wobei je nach Zustand die einzelnen Elemente auf `enabled true|false` bzw. `visible true|false`
-geschaltet werden. Diese Absicherung stellt einen erheblichen Teil der Logik dar.  
+(Finiten State Machine) geschehen, wobei je nach Zustand die einzelnen Elemente auf `enabled true|false` bzw.
+`visible true|false` geschaltet werden. Diese Absicherung stellt einen erheblichen Teil der Logik dar.  
 Die erforderlichen Verriegelung, dh. `enabled` und `visible` der einzelnen Elemente für die jeweiligen Zustände
 übernimmt die Prozedur **setFSM**. 
 
@@ -28,13 +28,13 @@ Bei tippen des Buttons **[SCAN]** wird **ListViewBLE** gelöscht und der Scan-Pr
 ![grafik](https://github.com/user-attachments/assets/41e80a3e-afb3-40a9-a1d8-1ce7e78dcb71)
 
 Jedes gefundene BLE-Gerät wird in die `DeviceList` eingetragen. **FSM := "SF"**  
-Zu diesem Zeitpunt kann bereits eine Filterung der Geräte erfolgen, damit nur die gewünschten Typen angezeigt werden und zur Auswahl stehen.  
+Zu diesem Zeitpunt sollte aber bereits eine Filterung der Geräte erfolgen, damit nur die gewünschten Typen angezeigt werden und zur Auswahl stehen. Zur Auswahl stehen in dieser Version nur **MeshCom-FW**.  
+[TODO] neue Grafik
 ![grafik](https://github.com/user-attachments/assets/efdbba3c-e587-425f-b33d-6b863f3938d8)
 
 ## 3) Select BLE-Device
 Nachdem man im nächsten Schritt ein BLE-Gerät aus der `DeviceList` ausgewählt hat, werden die zu diesem Zeitpunkt
-verfügbaren Infos ausgelesen und angezeigt: `DeviceAddress` (=MAC-Adresse), `DeviceName` und `DeviceRssi`.  
-Aber auch zu diesem Zeitpunkt kann die Auswahl auf eine gültige **MeshCom-FW** getestet werden und **FSM := "CV"**.  
+verfügbaren Infos ausgelesen und angezeigt: `DeviceAddress` (=MAC-Adresse), `DeviceName` und `DeviceRssi`. **FSM := "CV"**  
 ![grafik](https://github.com/user-attachments/assets/cb5edc16-c8f7-487a-9212-31efd415c7a3)
 
 ## 4) Connect
@@ -45,7 +45,7 @@ Dieser Verbindungsaufbau kann aber misslingen: **FSM := "CX"**
 Dann zurück für eine neue Auswahl.  
 ![grafik](https://github.com/user-attachments/assets/ef82e5bf-7d05-48b0-bcdb-2535adc3b47a)  
 
-Oder der Verbindungsaufbau gelingt, dann wird sofort ein neues MTU=250 ausgehandelt.
+Oder der Verbindungsaufbau gelingt, dann wird sofort ein neues **MTU=250** ausgehandelt.
 Und weitere Daten werden verfügbar: `ConnectedDeviceName`, `DeviceServices` und `DeviceCharacteristics`.
 **FSM := "CC"**  
 ![grafik](https://github.com/user-attachments/assets/58e61693-817d-43f1-b665-e8f0a81a3fa9)
@@ -58,4 +58,4 @@ Bei einem **DisConnect** mit dem Button **[disCON]** wird ein neuer **Scan** ode
 ![grafik](https://github.com/user-attachments/assets/26db232d-390a-454c-9377-76f3ad6ce38a)
 
 ___
-***:copyright: 17.2.2025 by OE3WAS - Wolfgang***
+***:copyright: 21.2.2025 by OE3WAS - Wolfgang***
