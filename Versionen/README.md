@@ -1,6 +1,7 @@
 # Android APP - Releases
 
-### MeshAll42_V0_5_3.apk
+### MeshAll42_V0_5_3b.apk
+Download unter Releases -> Tags ...
 Die erste hier verfügbare Pre-Version beherrscht folgende Grundfunktionen:
 
 <ins>Ablauf:</ins>  
