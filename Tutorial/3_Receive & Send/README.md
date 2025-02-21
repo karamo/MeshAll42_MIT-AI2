@@ -1,6 +1,6 @@
 # Receive & Send (Strings)
 
-Eine mögliche grundlegende Kommunikation könnte einfach über Strings erfolgen.  
+Eine Kommunikation mit dem BLE-Gerät kann über verschiedene Datentype. könnte einfach über Strings erfolgen.  
 Das hat sich aber im konkreten Fall der **MeshCom-FW** in Teilen als unmöglich herausgestellt,
 da das Message-Format eine Kombination von ASCII-Zeichen, Bytes und UTF-8 String ist.  
 Daher wurde der automatische Empfang auf `RegisterForBytes` umgestellt. Dadurch ist es nun möglich,
