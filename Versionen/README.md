@@ -1,7 +1,9 @@
 # Android APP - Releases
 
-### MeshAll42_V0_5_3b.apk
-Download unter Releases -> Tags ...
+## 1) Versionen
+
+### 1.1) MeshAll42_V0_5_3b.apk
+Download unter [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/tags)  
 Die erste hier verfügbare Pre-Version beherrscht folgende Grundfunktionen:
 
 <ins>Ablauf:</ins>  
@@ -20,14 +22,14 @@ Die erste hier verfügbare Pre-Version beherrscht folgende Grundfunktionen:
 Empfangene Msg und andere Datenpakete werden decodiert und dargestellt.  
 Die Funktionalität der APP wird laufend erweitert.
 
-## wichtige Hinweise zur Installation  (Android)
+## 20) wichtige Hinweise zur Installation  (Android)
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 * unter **Downloads** gibt es eine Protokoll-Datei **`MeshAll42.txt`**
 * das mit dem `Display on/off` ist in der **FW 4.34o 02.15** noch ein **Bug**. 2x via Terminal `--info` und anschließend funktioniert der Button auch.
 * Installiert und getestet unter **Android 8** und **Android 13**
 
-## und Bedienung
+## 21) und Bedienung
 * Die 1. Buttonreihe dient zum Ein-/Ausschalten der einzelnen Bereiche: **SCAN&CONNECT | INFO | CHAT | CONFIG | SETUP & DEBUG**
 * **INFO** lässt sich nur einschalten, wenn auch **SCAN** aktiv ist.
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
