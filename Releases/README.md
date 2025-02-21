@@ -32,7 +32,7 @@ Die Funktionalität der APP wird laufend erweitert.
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
 * im Bereich **CONFIG** gibt es ein DropDown **select...** in dem sich jene Befehle befinden, die einen zusätzlichen Parameter erfordern.
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet.
-
+* das Filtern der Msg-Pakete ist vorbereitet, aber noch nicht implementiert. Daher werden alle Pakete im Chat angezeigt.
 
 ___
 ***:copyright: 21.2.2025 by OE3WAS - Wolfgang***
