@@ -26,7 +26,7 @@ Die Funktionalität der APP wird laufend erweitert.
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 * Am Smartphone unter **Downloads** gibt es eine Protokoll-Datei **`MeshAll42.txt`**.
-* das mit dem `Display on/off` ist in der **FW 4.34o 02.15** noch ein **Bug**. siehe [#2](https://github.com/karamo/MeshAll42_MIT-AI2/issues/6)
+* ~~das mit dem `Display on/off` ist in der **FW 4.34o 02.15** noch ein **Bug**.~~ Behoben siehe [#2](https://github.com/karamo/MeshAll42_MIT-AI2/issues/6)
 * Installiert und getestet unter **Android 8** und **Android 13** und **Android 15**
 
 ## 21) und Bedienung (V 0.5.3 -> 0.5.4)
