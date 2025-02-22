@@ -2,7 +2,7 @@
 **BLE-Komunikation mit IoT-Devices - gebaut mit dem MIT-APP-Inventor 2 (MIT-AI2)**
 
 ## Meine Vision/Motivation
-* einfache APP-Erstellung
+* einfache APP-Erstellung (bevorzugt für Android)
 * Verständnis der BLE-Kommunikation
 * Dokumentation des Aufbaus einer BLE Kommunikation wie ich es bislang noch nicht lesen konnte
 * APP für die Kommunikation mit meinen Sensoren auf Basis ESP32 u.ä. (IoT-Devices)
@@ -29,7 +29,9 @@ Dabei gab es einige Hürden zu überwinden.
 [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) mit der **MeshCom-APP**.  
 Hier waren das Studium der Sourcen der FW und der APP, und auch viele Tests & Tricks erforderlich,
 um zu einem zufriedenstellenden Ergebnis zu kommen.  
+
+In weiterer Folge waren noch sehr spezielle Probleme zu lösen.  
 Somit entstand, sozusagen als Nebenprodukt, eine **MeshCom** kompatible APP mit den grundlegenden Funktionen.  
 
 ___
-***:copyright: 17.2.2025 by OE3WAS - Wolfgang***
+***:copyright: 22.2.2025 by OE3WAS - Wolfgang***
