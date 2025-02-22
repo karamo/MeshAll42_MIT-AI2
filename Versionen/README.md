@@ -26,16 +26,21 @@ Die Funktionalität der APP wird laufend erweitert.
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 * Am Smartphone unter **Downloads** gibt es eine Protokoll-Datei **`MeshAll42.txt`**.
-* das mit dem `Display on/off` ist in der **FW 4.34o 02.15** noch ein **Bug**. 2x via Terminal `--info` und anschließend funktioniert der Button auch.
+* das mit dem `Display on/off` ist in der **FW 4.34o 02.15** noch ein **Bug**. siehe #2
 * Installiert und getestet unter **Android 8** und **Android 13** und **Android 15**
 
 ## 21) und Bedienung
-* Die 1. Buttonreihe dient zum Ein-/Ausschalten der einzelnen Bereiche: **SCAN&CONNECT | INFO | CHAT | CONFIG | SETUP & DEBUG**
-* **INFO** lässt sich nur einschalten, wenn auch **SCAN** aktiv ist.
+* Die 1. Buttonreihe schaltet die einzelnen Bereiche: **SCAN&CONNECT | INFO | CHAT | CONFIG | SETUP & DEBUG**
+* ![ButtonsBereiche](https://github.com/user-attachments/assets/0b72f1c2-540e-48b8-8a52-6cc86db2d5ae)  
+* **INFO** lässt sich nur einschalten, wenn auch **SCAN&CONNECT** aktiv ist.
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
+* **[CLR]** löscht die Chat-Einträge (Liste), **[CL]** löscht das Eingabefeld
+* ![CHATcommands](https://github.com/user-attachments/assets/831c4a95-f4d3-4e03-aaef-78158347c546)
 * im Bereich **CONFIG** gibt es ein DropDown **select...** in dem sich jene Befehle befinden, die einen zusätzlichen Parameter erfordern.
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet.
+* ![CommandsParameter](https://github.com/user-attachments/assets/90c898f1-52be-435a-a20f-41ca8e16cd09)
 * das Filtern der Msg-Pakete ist vorbereitet, aber noch nicht implementiert. Daher werden alle Pakete im Chat angezeigt.
+* ![chatElemente](https://github.com/user-attachments/assets/6d76f70e-b34b-4faf-b2f6-695da1e3d675)
 
 ___
-***:copyright: 21.2.2025 by OE3WAS - Wolfgang***
+***:copyright: 22.2.2025 by OE3WAS - Wolfgang***
