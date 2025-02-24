@@ -35,8 +35,8 @@ Die Funktionalität der APP wird laufend erweitert.
 * **INFO** lässt sich nur einschalten, wenn auch **SCAN&CONNECT** aktiv ist.  
  ![ButtonsBereiche](https://github.com/user-attachments/assets/0b72f1c2-540e-48b8-8a52-6cc86db2d5ae)  
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
-* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld.  
- ![CHATcommands](https://github.com/user-attachments/assets/831c4a95-f4d3-4e03-aaef-78158347c546)
+* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld.
+ ![v0-5-4_MsgInput](https://github.com/user-attachments/assets/e22cdd25-911e-4dfd-8832-37150151a506)
 * im Bereich **CONFIG** gibt es ein DropDown **select...v**  in dem sich jene Befehle befinden, die einen zusätzlichen Parameter erfordern, der in das nebenstehende Textfeld einzugeben ist.
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet.  
   ![CommandsParameter](https://github.com/user-attachments/assets/90c898f1-52be-435a-a20f-41ca8e16cd09)
