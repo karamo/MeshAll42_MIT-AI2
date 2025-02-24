@@ -25,7 +25,7 @@ Die Funktionalität der APP wird laufend erweitert.
 ## 20) wichtige Hinweise zur Installation  (Android)
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
-* Am Smartphone unter **Downloads** gibt es eine Protokoll-Datei **`MeshAll42.txt`**.
+* Am Smartphone unter **Downloads** machte das Schreiben der Protokoll-Datei **`MeshAll42.txt`** Probleme. Daher vorübergehend ausgeschaltet.
 * das mit dem `Display on/off` ist in der **FW 4.34o 02.21** noch ein **Bug**.
 * Installiert und getestet unter **Android 8** und **Android 13** und **Android 15**
 
