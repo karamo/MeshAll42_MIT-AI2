@@ -13,7 +13,7 @@ verfügbar sind.
 ### 1.1) Die verschiedenen Arten der BLE-Pakete
 Derzeitiger Stand der Erkenntnis ist, dass grundzätzlich 2 unterschiedliche BLE-Pakete existieren, die sich im 1.Zeichen (ASCII/Byte)
 zu erkennen geben:
-* Messages allgemein: **`"@..."**`**
+* Messages allgemein: **`"@..."`**
 * Datenpakete: **`"D{...JSON...}"`**
 * _gibt es noch andere?_
 
@@ -29,7 +29,14 @@ Protokolls war es erforderlich, alle Daten als Bytes zu empfangen und diese Byte
 
 Bei den Datenpaketen ist der grundsätzliche Aufbau so, dass im Key **`"TYP":"xx"`** das **`"xx"`** verschiedene Werte annehmen
 kann und so die Pakete unterscheidet.  
-Folgende Typen sind derzeit bekannt:  
-* I
+Folgende Typen (Value) sind derzeit bekannt:  
+* **"I"** == `--info`
+* **"SE"** == `--seset`
+* **"SW"** == `--wifiset`
+* **"SN"** == `--nodeset`
+* **"W"** == `--wx` | `--weather`
+* **"G"** == `--pos`
+* **"SA"** == `--aprsset`
+* **"MH"**
 * ...
 [TODO]
