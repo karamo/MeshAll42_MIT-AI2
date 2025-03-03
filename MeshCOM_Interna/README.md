@@ -4,8 +4,7 @@ verfügbar sind.
 
 ## 1) Das Geheimnis der BLE-Pakete
 
-* Arten der Pakete
-* Aufbau der Pakete
+* Arten und Aufbau der Pakete
 * Aufforderungen an die FW via BLE
 
 [TODO]
@@ -64,6 +63,28 @@ Folgende Typen (Value) sind derzeit bekannt:
 * **"SA"** == `--aprsset`
 * **"MH"**
 * ...
+[TODO]
+
+
+## 2) Anforderungspakete aus der APP an die FW
+Es gibt verschiedene Anforderungspakete an die FW.  
+
+#### 2.1.1) {HELLO}
+Zu aller erst muss einmal der initiale Start der Kommunikation durch das sog. {HELLO}-Paket erfolgen.
+Hex-Bytes, wobei das 1.Byte die Länge und `00` den String-Delimiter darstellt:
+
+| 04 10 20 30 40 00 |
+|---|
+
+#### 2.1.2) Message
+Messages und Commands sind grundsätzlich genauso aufgebaut, wobei `len` die Anzahl der Bytes der Message ist.  
+**ACHTUNG:** In UTF-8 sind tw. mehr als 1 Byte/Zeichen!  
+? ev. fehlt noch der String-Delimiter `00`.
+
+| len+2 | A0 | Message Bytes |
+|---|---|---|
+
+
 [TODO]
 
 ___
