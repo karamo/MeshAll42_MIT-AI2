@@ -23,9 +23,9 @@ mehr oder weniger gute Beispielprogramme, die aber alle nicht meinen Bedürfniss
 Um nicht auf 2 Baustellen gleichzeitig entwickeln und Fehler suchen zu müssen, habe ich mich an Stelle des Sensors
 für eine **MeshCom-Node** entschieden.  
 Dabei gab es einige Hürden zu überwinden.  
-• Zu aller erst war es erforderlich, die **Entwicklungsumgebung** des **MIT-AI2** kennen zu lernen.
-• Dann die Eigenheiten von BLE.
-• Und wegen der nicht vorhandenen Dokumentation der speziellen BLE-Kommunikation der
+* Zu aller erst war es erforderlich, die **Entwicklungsumgebung** des **MIT-AI2** kennen zu lernen.
+* Dann die Eigenheiten von BLE.
+* Und wegen der nicht vorhandenen Dokumentation der speziellen BLE-Kommunikation der
 [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) mit der **MeshCom-APP**.  
 Hier waren das Studium der Sourcen der FW und der APP, und auch viele Tests & Tricks erforderlich,
 um zu einem zufriedenstellenden Ergebnis zu kommen.  
@@ -34,4 +34,4 @@ In weiterer Folge waren noch sehr spezielle Probleme zu lösen.
 Somit entstand, sozusagen als Nebenprodukt, eine **MeshCom** kompatible APP mit den grundlegenden Funktionen.  
 
 ___
-***:copyright: 22.2.2025 by OE3WAS - Wolfgang***
+***:copyright: 3.3.2025 by OE3WAS - Wolfgang***
