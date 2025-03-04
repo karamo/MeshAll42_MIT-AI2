@@ -13,7 +13,7 @@ verfügbar sind.
 Derzeitiger Stand der Erkenntnis ist, dass grundzätzlich 2 unterschiedliche BLE-Pakete existieren, die man über BLE von der FW 
 empfängt und die sich im 1. Zeichen (ASCII/Byte) zu erkennen geben:
 * Messages allgemein: **`@`**
-* Datenpakete: **`D{...JSON...}`**
+* Datenpakete: **`D{"KEY":"value", ...}`**
 * _gibt es noch andere?_
 
 #### 1.1.1) Messages BLE Empfang
