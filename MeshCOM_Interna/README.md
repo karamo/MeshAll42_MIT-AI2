@@ -102,8 +102,8 @@ Messages und Commands sind grundsätzlich genauso aufgebaut, wobei `len` die Anz
 
 **<ins>Beispiele:</ins>**
 
-`len` & `ID` sind als Hex-Byte dargestellt, die Message bzw. der Command sind ASCII. Bei den Commands ist
-Groß-/Kleinschreibung unbedeutend und wird hier nur der Klarheit wegen unterschiedlich geschrieben.  
+`len` & `ID` sind als Hex-Byte dargestellt, die Message bzw. der Command sind als ASCII/UTF-8 dargestellt.
+Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Klarheit wegen unterschiedlich geschrieben.  
 
 | len+2 | ID | Message/Command |
 |---|---|---|
