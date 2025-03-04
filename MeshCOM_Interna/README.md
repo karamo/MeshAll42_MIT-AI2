@@ -78,9 +78,9 @@ Es gibt verschiedene Anforderungspakete an die FW, also das "Senden".
 #### 2.1) {HELLO}
 Zu aller erst muss einmal der initiale Start der Kommunikation durch das sog. {HELLO}-Paket erfolgen,
 welches gesendet werden muss.  
-Hex-Bytes, wobei das 1.Byte (die `04`) die Länge und `00` den String-Delimiter darstellt:
+Hex-Bytes, wobei das 1.Byte (die `04`) die Länge ~~und `00` den String-Delimiter darstellt:~~
 
-| 04 10 20 30 40 00 |
+| 04 10 20 30 |
 |---|
 
 In der Folge kommen von der FW mehrere Datenpakete, die die Parameter enthalten (I, ...).  
