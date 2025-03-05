@@ -77,14 +77,13 @@ Es gibt verschiedene Anforderungspakete an die FW, also das "Senden".
 
 #### 2.1) {HELLO}
 Zu aller erst muss einmal der initiale Start der Kommunikation durch das sog. {HELLO}-Paket erfolgen,
-welches gesendet werden muss.  
-Hex-Bytes, wobei das 1.Byte (die `04`) die Länge darstellt:
+welches gesendet werden muss. Darstellung als Hex-Bytes:
 
 | 04 10 20 30 |
 |---|
 
-In der Folge kommen von der FW mehrere Datenpakete, die die Parameter enthalten (I, ...).  
-Auch die noch in der FW empfangenen und gespeicherten Nachrichten werden übertragen.  
+In der Folge kommen von der FW mehrere Datenpakete, die die Parameter enthalten (I, SE, ...).  
+Auch die noch in der FW empfangenen und gespeicherten Nachrichten werden übertragen (@:).  
 Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 
 | D{"TYP":"CONFFIN"} |
