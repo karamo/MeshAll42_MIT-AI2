@@ -137,7 +137,9 @@ Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 * Position Settings from phone are: length 1B | Msg ID 1B | 4B lat/lon/alt | 1B save_settings_flag
 	* Save_flag is 0x0A for save and 0x0B for don't save
 * If phone send periodicaly position, we don't save them.
-* currently we save the settings when the last config arrives which is APRS SYMBOLS - adapt is needed!
+* currently we save the settings when the last config arrives which is APRS SYMBOLS - adapt is needed!  
+(Aus **FW4.34o03.04(dev)** `phone_commands.cpp` Z.365ff.)
+
 
 [TODO]
 
