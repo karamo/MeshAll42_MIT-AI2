@@ -27,7 +27,7 @@ Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII
 `dt` = Destination + Typ [ASCII] (verschiedene Varianten)  
 [weitere Parameter] sind abhängig von der Unterart einer Message
 
-| Typ | Msg-ID | Hop | Path | . | dest | Message | del | [weitere Parameter] |
+| Typ | Msg-ID | Hop | Path | del | dest | Message | del | [weitere Parameter] |
 |----|---|---|---|---|---|---|---|---|
 | @: | bb bb bb bb | hh | aa ... aa | > | _**dt**_ | UTF-8 ... | 00 | bb .. bb |
 
