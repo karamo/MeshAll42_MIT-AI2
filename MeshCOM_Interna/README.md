@@ -21,21 +21,15 @@ Der Aufbau eines Message-Paketes stammt aus den allerersten Anfängen der FW-Ent
 FW v4.xx zu ändern. Ev. werden in der FW v5.xx Änderungen im Aufbau erfolgen.  
 Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII + Bytes + UTF-8, was die Dekodierung schwieriger gestaltet.  
 
-| Typ | Msg-ID | Hop | Path | . | dest | Message | del | [weitere Parameter] |
-|----|---|---|---|---|---|---|---|---|
-| @: | bb bb bb bb | hh | aa ... aa | > | _**dt**_ | UTF-8 ... | 00 | bb .. bb |
-
-| Typ | Msg-ID | ??? |
-|---|---|---|
-| @A | bb bb bb bb | bb bb bb bb bb bb |
-| .. | ... | ... |
-|---|---|---|
-
 `bb` = Byte  
 `hh` = binary combo  
 `aa` = Path [ASCII]  
 `dt` = Destination + Typ [ASCII] (verschiedene Varianten)  
 [weitere Parameter] sind abhängig von der Unterart einer Message
+
+| Typ | Msg-ID | Hop | Path | . | dest | Message | del | [weitere Parameter] |
+|----|---|---|---|---|---|---|---|---|
+| @: | bb bb bb bb | hh | aa ... aa | > | _**dt**_ | UTF-8 ... | 00 | bb .. bb |
 
 <ins>Varianten für _**`dt`**_</ins>
 * `*:` = Message to all
@@ -43,10 +37,17 @@ Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII
 * `OE3WAS-12:` = DM (DirectMessage) to __*OE3WAS-12*__
 * `*:{CET}` = Date & Time
 * `*!` = POS-String
-* ...
 
 * DM ist dann, wenn DM == eigener CALL
 * GRP-Msg dient zum Vergleich mit den abonnierten Gruppen
+
+| Typ | Msg-ID | ??? |
+|---|---|---|
+| @A | bb bb bb bb | bb bb bb bb bb bb |
+| .. | ... | ... |
+|---|---|---|
+
+...
 
 Diese Datenstruktur & Liste sind u.U. unvollständig und können auf Grund neuer Erkenntnisse geändert werden.  
 [TODO]
@@ -68,9 +69,9 @@ Folgende Typen (Value) sind derzeit bekannt:
 * **"G"** == `--pos`
 * **"SA"** == `--aprsset`
 * **"MH"**
-* ...
-[TODO]
 
+#### 1.1.3) response Messages
+...
 
 ## 2) Anforderungspakete aus der APP an die FW
 Es gibt verschiedene Anforderungspakete an die FW, also das "Senden".  
@@ -91,7 +92,7 @@ Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 
 Daran anschließend können eigene Commands & Messages an die FW geschickt werden.
 
-#### 2.2) Messages & Commands an die FW via BLE senden
+#### 2.2) (Text)Messages & Commands an die FW via BLE senden
 Messages und Commands sind grundsätzlich genauso aufgebaut, wobei `len` die Anzahl der Bytes der Message ist.  
 **ACHTUNG:** In UTF-8 sind tw. mehr als 1 Byte/Zeichen!  
 
@@ -103,7 +104,7 @@ Messages und Commands sind grundsätzlich genauso aufgebaut, wobei `len` die Anz
 `len` & `ID` sind als Hex-Byte dargestellt, die Message bzw. der Command sind als ASCII/UTF-8 dargestellt.
 Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Klarheit wegen unterschiedlich geschrieben.  
 
-| len+2 | ID | Message/Command |
+| len+2 | ID | (Text)Message/Command |
 |---|---|---|
 | 08 | A0 | --info |
 | 15 | A0 | --setCALL OE3WAS-12 |
@@ -111,9 +112,32 @@ Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Kl
 | 27 | A0 | {OE3WAS-11}Direktmessage an OE3WAS-11 |
 |---|---|---|
 
-#### 2.3) Special Commands
+#### 2.3) Config Messages
 Es gibt eine Gruppe von Commands, die einen anderen ID habe, aber grundsätzlich gleich aufgebaut sind.
-Der jeweilige Command hat aber logischerweise eine eigene Syntax.
+Der jeweilige Command hat aber logischerweise eine eigene Syntax.  
+Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
+
+**Config Messages:** 1B length - 1B Msg-ID - Data
+<ins>Msg-ID:</ins>
+* 0x20 - Timestamp from phone (4B)
+* 0x50 - Callsign
+* 0x55 - Wifi SSID and PW (1B len - SSID - 1B len - PW)
+* 0x70 - Latitude
+* 0x80 - Longitude
+* 0x90 - Altitude
+* 0x95 - APRS Symbols
+* 0xF0 - Save Settings to Flash
+  * Data:
+  * Callsign: 1B len - Callsign
+  * Latitude: 4B Float
+  * Longitude: 4B Float
+  * Altitude: 4B Integer
+* WiFi SSID and PWD:
+  * 1B - SSID Length - SSID - 1B PWD Length - PWD
+* Position Settings from phone are: length 1B | Msg ID 1B | 4B lat/lon/alt | 1B save_settings_flag
+	* Save_flag is 0x0A for save and 0x0B for don't save
+* If phone send periodicaly position, we don't save them.
+* currently we save the settings when the last config arrives which is APRS SYMBOLS - adapt is needed!
 
 [TODO]
 
