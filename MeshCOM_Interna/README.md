@@ -21,11 +21,11 @@ Der Aufbau eines Message-Paketes stammt aus den allerersten Anfängen der FW-Ent
 FW v4.xx zu ändern. Ev. werden in der FW v5.xx Änderungen im Aufbau erfolgen.  
 Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII + Bytes + UTF-8, was die Dekodierung schwieriger gestaltet.  
 
-| .. | Msg-ID | Hop | Path | . | dest | Message | del | [weitere Parameter] |
+| Typ | Msg-ID | Hop | Path | . | dest | Message | del | [weitere Parameter] |
 |----|---|---|---|---|---|---|---|---|
 | @: | bb bb bb bb | hh | aa ... aa | > | dt | UTF-8 ... | 00 | bb .. bb |
 
-| .. | Msg-ID | ??? |
+| Typ | Msg-ID | ??? |
 |---|---|---|
 | @A | bb bb bb bb | bb bb bb bb bb bb |
 | .. | ... | ... |
@@ -35,7 +35,7 @@ Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII
 `hh` = binary combo  
 `aa` = Path [ASCII]  
 `dt` = Destination + Typ [ASCII] (verschiedene Varianten)  
-"weitere Parameter" sind abhängig von der Unterart einer Message
+[weitere Parameter] sind abhängig von der Unterart einer Message
 
 <ins>Varianten für `dt`</ins>
 * `*:` = Message to all
