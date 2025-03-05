@@ -19,7 +19,7 @@ empfängt und die sich im 1. Zeichen (ASCII/Byte) zu erkennen geben:
 #### 1.1.1) Messages BLE Empfang
 Der Aufbau eines Message-Paketes stammt aus den allerersten Anfängen der FW-Entwicklung und es wird schwierig sein, dies in der
 FW v4.xx zu ändern. Ev. werden in der FW v5.xx Änderungen im Aufbau erfolgen.  
-Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII + Bytes + UTF-8, was die Dekodierung schwieriger gestaltet.  
+Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII + Bytes + Combo-Bytes + UTF-8, was die Dekodierung schwieriger gestaltet.  
 
 `bb` = Byte  
 `hh` = binary combo  
@@ -83,8 +83,9 @@ welches gesendet werden muss. Darstellung als Hex-Bytes:
 | 04 10 20 30 |
 |---|
 
-In der Folge kommen von der FW mehrere Datenpakete, die die Parameter enthalten (I, SE, ...).  
+In der Folge kommen von der FW mehrere Datenpakete, die die Parameter enthalten (I, SE, SW, SN, W, G, SA).  
 Auch die noch in der FW empfangenen und gespeicherten Nachrichten werden übertragen (@:).  
+Das Datenpaket mit dem **"TYP":"MH"** wird zwischendurch mal gesendet.  
 Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 
 | D{"TYP":"CONFFIN"} |
