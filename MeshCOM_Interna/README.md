@@ -1,11 +1,11 @@
 # MeshCOM FW V 4.xx - Interna
-Hier werden die "Geheimnisse" der Kommunikation mit der FW via BLE aufgezeigt, da sie zum Zeitpunkt der Entwicklung der APP nicht
-verfügbar sind.
+Hier werden die "Geheimnisse" der Kommunikation mit der [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) 
+via BLE aufgezeigt, da zum Zeitpunkt der Entwicklung der APP keine aureichenden, detailierten Infos verfügbar waren.
 
 ## 1) Das Geheimnis der BLE-Pakete
 
-* Arten und Aufbau der Pakete
-* Aufforderungen an die FW via BLE
+* (FW -> BLE -> APP) Arten und Aufbau der Pakete
+* (FW <- BLE <- APP) Aufforderungen an die FW via BLE
 
 [TODO]
 
@@ -16,10 +16,11 @@ empfängt und die sich im 1. Zeichen (ASCII/Byte) zu erkennen geben:
 * Datenpakete (JSON): **`D{"KEY":"value", ...}`**
 * _gibt es noch andere?_
 
-#### 1.1.1) Messages BLE Empfang
+#### 1.1.1) Messages via BLE empfangen
 Der Aufbau eines Message-Paketes stammt aus den allerersten Anfängen der FW-Entwicklung und es wird schwierig sein, dies in der
 FW v4.xx zu ändern. Ev. werden in der FW v5.xx Änderungen im Aufbau erfolgen.  
-Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII + Bytes + Combo-Bytes + UTF-8, was die Dekodierung schwieriger gestaltet.  
+Der Aufbau des Message-Protokolls (FW -> BLE -> APP) ist eine Mischung aus ASCII + Bytes + Combo-Bytes + UTF-8, was die Dekodierung
+schwieriger gestaltet.  
 
 `bb` = Byte  
 `hh` = binary combo  
@@ -41,24 +42,22 @@ Der Aufbau des Message-Protokolls (FW -> BLE -> ...) ist eine Mischung aus ASCII
 * DM ist dann, wenn DM == eigener CALL
 * GRP-Msg dient zum Vergleich mit den abonnierten Gruppen
 
-| Typ | Msg-ID | ??? |
+| Typ | Msg-ID | ACK |
 |---|---|---|
 | @A | bb bb bb bb | bb bb bb bb bb bb |
 | .. | ... | ... |
 |---|---|---|
 
-...
-
-Diese Datenstruktur & Liste sind u.U. unvollständig und können auf Grund neuer Erkenntnisse geändert werden.  
-[TODO]
+...  
+[TODO] Diese Datenstruktur & Liste sind u.U. unvollständig und können auf Grund neuer Erkenntnisse geändert werden.  
 
 #### 1.1.2) Datenpakete via BLE empfangen
 Da Datenpakete als ein JSON-String formatiert sind, lassen sich die **`"key":"value"`** Paare recht einfach dekodieren.
 Es wäre so einfach gewesen, alle BLE-Daten als String empfangen zu können. Aber auf Grund des unsäglichen Aufbaus des Message
 Protokolls war es erforderlich, **alle Daten als Bytes zu empfangen** und diese Byte-Folge in UTF-8 umzukonvertieren.
 
-Bei den Datenpaketen ist der grundsätzliche Aufbau so, dass im Key **`"TYP":"xx"`** das **`"xx"`** verschiedene Werte annehmen
-kann und so die Pakete unterscheidet.  
+Bei den Datenpaketen ist der grundsätzliche Aufbau so, dass im Key **`"TYP":"xx"`** das **`"xx"`** (Value) verschiedene Werte
+annehmen kann und so die Pakete unterscheidet.  
 
 Folgende Typen (Value) sind derzeit bekannt:  
 * **"I"** == `--info`
@@ -94,7 +93,8 @@ Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 Daran anschließend können eigene Commands & Messages an die FW geschickt werden.
 
 #### 2.2) (Text)Messages & Commands an die FW via BLE senden
-Messages und Commands sind grundsätzlich genauso aufgebaut, wobei `len` die Anzahl der Bytes der Message ist.  
+Messages und Commands sind grundsätzlich gleich aufgebaut, wobei `len` die Anzahl der Bytes der Message ist,
+gefolgt von der Msg-ID und der Msg-Bytes.  
 **ACHTUNG:** In UTF-8 sind tw. mehr als 1 Byte/Zeichen!  
 
 | len+2 | A0 | Message Bytes |
@@ -118,7 +118,6 @@ Es gibt eine Gruppe von Commands, die einen anderen ID habe, aber grundsätzlich
 Der jeweilige Command hat aber logischerweise eine eigene Syntax.  
 Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 
-**Config Messages:** 1B length - 1B Msg-ID - Data
 <ins>Msg-ID:</ins>
 * 0x20 - Timestamp from phone (4B)
 * 0x50 - Callsign
@@ -145,4 +144,4 @@ Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 [TODO]
 
 ___
-***:copyright: 4.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 6.3.2025 by OE3WAS - Wolfgang***
