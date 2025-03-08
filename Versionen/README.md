@@ -49,4 +49,4 @@ Die Funktionalität der APP wird laufend erweitert.
  ![chatElemente](https://github.com/user-attachments/assets/6d76f70e-b34b-4faf-b2f6-695da1e3d675)
 
 ___
-***:copyright: 7.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 8.3.2025 by OE3WAS - Wolfgang***
