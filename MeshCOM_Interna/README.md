@@ -118,24 +118,16 @@ Der jeweilige Command hat aber logischerweise eine eigene Syntax.
 Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 
 <ins>Msg-ID:</ins>
-* 0x20 - Timestamp from phone (4B)
-* 0x50 - Callsign
-* 0x55 - Wifi SSID and PW (1B len - SSID - 1B len - PW)
-* 0x70 - Latitude
-* 0x80 - Longitude
-* 0x90 - Altitude
-* 0x95 - APRS Symbols
+* 0x20 - Timestamp from phone [4B]
+* 0x50 - Callsign (`--setCALL`) [1B len - Callsign]
+* 0x55 - Wifi SSID (`--setSSID`) and PWD (`--setPWD`) [1B - SSID Length - SSID - 1B PWD Length - PWD]
+* 0x70 - Latitude (`--setLAT`) [1B length + 1B Msg-ID + 4B lat + 1B save_flag]
+* 0x80 - Longitude (`--setLON`) [1B length + 1B Msg-ID + 4B lon + 1B save_flag]
+* 0x90 - Altitude (`--setALT`) [1B length + 1B Msg-ID + 4B alt + 1B save_flag]
+* 0x95 - APRS Symbols (`--symID` `--symCD`)
 * 0xF0 - Save Settings to Flash
-  * Data:
-  * Callsign: 1B len - Callsign
-  * Latitude: 4B Float
-  * Longitude: 4B Float
-  * Altitude: 4B Integer
-* WiFi SSID and PWD:
-  * 1B - SSID Length - SSID - 1B PWD Length - PWD
-* Position Settings from phone are: length 1B | Msg ID 1B | 4B lat/lon/alt | 1B save_settings_flag
-	* Save_flag is 0x0A for save and 0x0B for don't save
-* If phone send periodicaly position, we don't save them. 
+* **save_flag** is `0x0A` for save and `0x0B` for don't save
+* If phone send periodicaly position, we don't save them. (???)  
 (Aus Z.365ff https://github.com/icssw-org/MeshCom-Firmware/blob/oe1kfr_434q/src/phone_commands.cpp)
 
 
