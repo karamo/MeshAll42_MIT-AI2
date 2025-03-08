@@ -5,7 +5,7 @@
 ### 0.5.5) MeshAll42_V0_5_5.apk
 Einige Ergänzungen und Issues behoben. Siehe unter Download  [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/tags)  
 
-* Schalten von einigen Funktionen ist bereits realisiert. Sensoren fehlen noch. Dafür muss ich erst die kleinen Boards finden, anbauen und in der APP auswerten.
+* Schalten von einigen Funktionen ist bereits realisiert. Sensoren fehlen noch. Dafür muss ich erst die kleinen Boards finden, anbauen und in der APP auswerten, was in **v0.5.6** kommen wird.
 * **GPS** sollte schon funktionieren, habe ich aber auch noch nicht am Board. Falls man es einschaltet und es wird nicht gefunden, dann schaltet es sich richtigerweise von selber wieder aus.
 
 
