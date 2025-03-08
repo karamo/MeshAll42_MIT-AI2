@@ -7,11 +7,9 @@ via BLE aufgezeigt, da zum Zeitpunkt der Entwicklung der APP keine aureichenden,
 * (FW -> BLE -> APP) Arten und Aufbau der Pakete
 * (FW <- BLE <- APP) Aufforderungen an die FW via BLE
 
-[TODO]
-
-### 1.1) Die verschiedenen Arten der BLE-Pakete
-Derzeitiger Stand der Erkenntnis ist, dass grundzätzlich 2 unterschiedliche BLE-Pakete existieren, die man über BLE von der FW 
-empfängt und die sich im 1. Zeichen (ASCII/Byte) zu erkennen geben:
+#### 1.1) Die verschiedenen Arten der BLE-Pakete
+Derzeitiger Stand der Erkenntnis ist, dass grundzätzlich 2 unterschiedliche BLE-Pakete existieren, die man über BLE
+von der FW empfängt und die sich im 1. Zeichen (ASCII/Byte) zu erkennen geben:
 * Messages allgemein: **`@...`**
 * Datenpakete (JSON): **`D{"KEY":"value", ...}`**
 * _gibt es noch andere?_
@@ -42,16 +40,19 @@ schwieriger gestaltet.
 * DM ist dann, wenn DM == eigener CALL
 * GRP-Msg dient zum Vergleich mit den abonnierten Gruppen
 
+#### 1.1.2) ACK-Paket empfangen
+
 | Typ | Msg-ID | ACK |
 |---|---|---|
 | @A | bb bb bb bb | bb bb bb bb bb bb |
-| .. | ... | ... |
 |---|---|---|
 
+#### 1.1.3) response Messages
+...  
 ...  
 [TODO] Diese Datenstruktur & Liste sind u.U. unvollständig und können auf Grund neuer Erkenntnisse geändert werden.  
 
-#### 1.1.2) Datenpakete via BLE empfangen
+#### 1.1.4) Datenpakete via BLE empfangen
 Da Datenpakete als ein JSON-String formatiert sind, lassen sich die **`"key":"value"`** Paare recht einfach dekodieren.
 Es wäre so einfach gewesen, alle BLE-Daten als String empfangen zu können. Aber auf Grund des unsäglichen Aufbaus des Message
 Protokolls war es erforderlich, **alle Daten als Bytes zu empfangen** und diese Byte-Folge in UTF-8 umzukonvertieren.
@@ -69,16 +70,14 @@ Folgende Typen (Value) sind derzeit bekannt:
 * **"SA"** == `--aprsset`
 * **"MH"**
 
-#### 1.1.3) response Messages
-...
 
-## 2) Anforderungspakete aus der APP an die FW
+## 1.2) Anforderungspakete aus der APP an die FW
 Es gibt verschiedene Anforderungspakete an die FW, also das "Senden".  
+Falls nicht anderes vermerkt, ist Darstellung als Hex-Bytes (0x..).
 
-#### 2.1) {HELLO}
+#### 1.2.1) {HELLO}
 Zu aller erst muss einmal der initiale Start der Kommunikation durch das sog. {HELLO}-Paket erfolgen,
-welches gesendet werden muss. Darstellung als Hex-Bytes:
-
+welches gesendet werden muss.
 | 04 10 20 30 |
 |---|
 
@@ -92,15 +91,15 @@ Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 
 Daran anschließend können eigene Commands & Messages an die FW geschickt werden.
 
-#### 2.2) (Text)Messages & Commands an die FW via BLE senden
-Messages und Commands sind grundsätzlich gleich aufgebaut, wobei `len` die Anzahl der Bytes der Message ist,
-gefolgt von der Msg-ID und der Msg-Bytes.  
+#### 1.2.2) (Text)Messages & Commands an die FW via BLE senden
+Messages und Commands sind grundsätzlich gleich aufgebaut, wobei `len` die Anzahl der Message-Bytes ist,
+gefolgt von der Msg-ID und den Message-Bytes.  
 **ACHTUNG:** In UTF-8 sind tw. mehr als 1 Byte/Zeichen!  
 
-| len+2 | A0 | Message Bytes |
+| len+2 | A0 | Message-Bytes |
 |---|---|---|
 
-#### 2.2.1) Beispiele:
+#### 1.2.2.1) Beispiele:
 
 `len` & `ID` sind als Hex-Byte dargestellt, die Message bzw. der Command sind als ASCII/UTF-8 dargestellt.
 Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Klarheit wegen unterschiedlich geschrieben.  
@@ -113,7 +112,7 @@ Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Kl
 | 27 | A0 | {OE3WAS-11}Direktmessage an OE3WAS-11 |
 |---|---|---|
 
-#### 2.3) Config Messages
+#### 1.2.3) Config Messages
 Es gibt eine Gruppe von Commands, die einen anderen ID habe, aber grundsätzlich gleich aufgebaut sind.
 Der jeweilige Command hat aber logischerweise eine eigene Syntax.  
 Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
@@ -136,12 +135,11 @@ Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
   * 1B - SSID Length - SSID - 1B PWD Length - PWD
 * Position Settings from phone are: length 1B | Msg ID 1B | 4B lat/lon/alt | 1B save_settings_flag
 	* Save_flag is 0x0A for save and 0x0B for don't save
-* If phone send periodicaly position, we don't save them.
-* currently we save the settings when the last config arrives which is APRS SYMBOLS - adapt is needed!  
-(Aus **FW4.34o03.04(dev)** `phone_commands.cpp` Z.365ff.)
+* If phone send periodicaly position, we don't save them. 
+(Aus Z.365ff https://github.com/icssw-org/MeshCom-Firmware/blob/oe1kfr_434q/src/phone_commands.cpp)
 
 
-[TODO]
+[TODO] weitere Infos folgen ...
 
 ___
-***:copyright: 6.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 8.3.2025 by OE3WAS - Wolfgang***
