@@ -22,15 +22,15 @@
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
 
 ### 2.2) MeshAll42_V0_5_5.apk
-Einige Ergänzungen und Issues behoben. Siehe unter Download  [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/tags)  
+Einige Ergänzungen und Issues behoben.  
+Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.5)  
 
 * Schalten von einigen Funktionen ist bereits realisiert. Sensoren fehlen noch. Dafür muss ich erst die kleinen Boards finden, anbauen und in der APP auswerten, was in **v0.5.6** kommen wird.
 * **GPS** sollte schon funktionieren, habe ich aber auch noch nicht am Board. Falls man es einschaltet und es wird nicht gefunden, dann schaltet es sich richtigerweise von selber wieder aus.
 
 
 ### 2.1) MeshAll42_V0_5_4.apk
-Download unter [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/tags)  
-Verbesserte und erweiterte Version beherrscht u.a. folgende Grundfunktionen:
+Gegenüber V0.5.3 Verbesserte und erweiterte Version beherrscht u.a. folgende Grundfunktionen:
 
 <ins>Ablauf:</ins>  
 * **[SCAN]** Scannen von BLE-Geräten
