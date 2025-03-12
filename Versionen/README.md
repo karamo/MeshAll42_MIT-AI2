@@ -1,7 +1,7 @@
 # Android APP - Releases
 
 ## 1) wichtige Hinweise zur Installation (Android)
-* APPs mit dem AI2 erstellt, sollten ab **Android V5+** lauffähig sein. Installiert und getestet wurde es unter **Android 8** und **Android 13** und **Android 15**
+* APPs, die mit dem AI2 erstellt wurden, sollten ab **Android V5+** lauffähig sein. Installiert und getestet wurde es unter **Android 8** und **Android 13** und **Android 15**
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 
