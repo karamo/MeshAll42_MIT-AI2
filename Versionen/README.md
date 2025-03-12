@@ -5,7 +5,7 @@
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 
-## 1.2) und Bedienung (V 0.5.3 -> 0.5.4 -> 0.5.5)
+## 1.1) und Bedienung (V 0.5.3 -> 0.5.4 -> 0.5.5)
 * Die 1. Buttonreihe schaltet die Sichtbarkeit der einzelnen Bereiche:
  **SCAN&CONNECT | INFO | CHAT | CONFIG | SETUP & DEBUG** um.  
  ![ButtonsBereiche](https://github.com/user-attachments/assets/0b72f1c2-540e-48b8-8a52-6cc86db2d5ae)  
