@@ -8,9 +8,9 @@
 ## 1.1) und Bedienung (V 0.5.3 -> 0.5.4 -> 0.5.5)
 * Die 1. Buttonreihe schaltet die Sichtbarkeit der einzelnen Bereiche um:  
  **[BLE] [INFO] [CHAT] [CONFIG] [SETUP&DEBUG]**  
- ![ButtonsBereiche](https://github.com/user-attachments/assets/0b72f1c2-540e-48b8-8a52-6cc86db2d5ae)  
+![ButtonsBereiche](https://github.com/user-attachments/assets/061460c8-9b4d-4019-ae09-b67d06d1a605)  
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
-* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld.  
+* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld, der **[Flieger]** sendet die Message.  
  ![v0-5-4_MsgInput](https://github.com/user-attachments/assets/e22cdd25-911e-4dfd-8832-37150151a506)
 * im Bereich **CONFIG** gibt es ein DropDown **select...v**  in dem sich jene Befehle befinden, die einen zusätzlichen Parameter erfordern, der in das nebenstehende Textfeld einzugeben ist.
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet. Derzeit wird generll der Notifier "Wait for REBOOT..." ausgelöst, was aber bei einigen Befehlen nicht erforderlich wäre. Wird in einer Folgeversion geklärt.  
