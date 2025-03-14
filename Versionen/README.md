@@ -5,7 +5,7 @@
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
 
 ### 1.3) MahAll42_V0_6_0.apk - preview
-* +Sprachausgabe der Nachrichten
+* +Sprachausgabe der Nachrichten (experimentell)
 * +Protokoll-Datei (LogFile) mit Rohdaten (Bytes) und dekodiert
 * +Setup-Parameter in der APP speichern
 ___
