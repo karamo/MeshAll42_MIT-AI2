@@ -1,6 +1,5 @@
 # Android APP - Releases
-
-
+=> [Installation & Bedienung](https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/Versionen/README.md#2-wichtige-hinweise-zur-installation-android) 
 
 ## 1) Versionen
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
