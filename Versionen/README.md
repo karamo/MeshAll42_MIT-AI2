@@ -6,8 +6,10 @@ Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die
 
 ### 1.3) MeshAll42_V0_6_0.apk - preview
 * +Sprachausgabe der Nachrichten (experimentell)
+* +verschiedene Sound-Effekte (abschaltbar)
 * +Protokoll-Datei (LogFile) mit Rohdaten (Bytes) und dekodiert
 * +Setup-Parameter in der APP speichern
+* +DM & GRP Eingabe (#21)
 ___
 ### 1.2) MeshAll42_V0_5_5.apk
 Einige Ergänzungen und Issues behoben.  
