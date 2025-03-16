@@ -15,7 +15,7 @@ Die einzelnen Protokollzeilen sind UTF-8 codiert und haben folgenden grundlegend
 `Uhrzeit`  `ID`  `Daten`
 
 #### 1.2.1) ID = `#`
-`01:11:25 # MeshAll42 - V0.5.9b | v 1.0`  
+`01:11:25 # MeshAll42 - V0.5.9 | v 1.0`  
 
 <ins>Daten:</ins> `APP-Titel` - `APP-Version` | `Proto-Version`
 
