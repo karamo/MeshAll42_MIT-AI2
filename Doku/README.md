@@ -1,7 +1,7 @@
 # MeshAll42_MIT-AI2
 Beschreibung von spezifischen Teilen der APP.
 
-## 1) Protokoll-Datei (Log-File)
+## 1) Protokoll-Datei (Log-File) [ab v 0.6.0]
 
 ### 1.1) Dateiname
 `APP-Titel` `Erstellungsdatum` `Uhrzeit` **.txt**  
