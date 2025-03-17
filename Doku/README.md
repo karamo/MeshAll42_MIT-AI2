@@ -13,15 +13,35 @@
 ![ButtonsBereiche](https://github.com/user-attachments/assets/061460c8-9b4d-4019-ae09-b67d06d1a605)  
 ___
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
-* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld, der **[Flieger]** sendet die Message.  
- ![v0-5-4_MsgInput](https://github.com/user-attachments/assets/e22cdd25-911e-4dfd-8832-37150151a506)
+* **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld, der **[Flieger]** sendet die Message.
+* **DM/GRP** Eingabefeld für **Direct-Message** & **Group-Message**.
+![MsgInput](https://github.com/user-attachments/assets/454e0a69-c60b-477e-a96a-44633443824d)
+
 ___
 * im Bereich **CONFIG** gibt es ein DropDown **select...v**  in dem sich jene Befehle befinden, die einen zusätzlichen Parameter erfordern, der in das nebenstehende Textfeld einzugeben ist.
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet. Derzeit wird generell der Notifier "Wait for REBOOT..." ausgelöst, was aber bei einigen Befehlen nicht erforderlich wäre. Wird in einer Folgeversion geklärt.  
   ![CommandsParameter](https://github.com/user-attachments/assets/90c898f1-52be-435a-a20f-41ca8e16cd09)
 ___
-* das Filtern der Msg-Pakete ist vorbereitet, aber noch nicht implementiert. Daher werden alle Pakete im Chat angezeigt.  
- ![chatElemente](https://github.com/user-attachments/assets/6d76f70e-b34b-4faf-b2f6-695da1e3d675)
+* Das Filtern der Msg-Pakete ist ab **v 0.5.10b** teilweise möglich (Para, CET, ACK) und kann als **setDefault** gesetzt werden.
+* Die Auswahl der Sound-Effekte wird auch lokal in der APP gespeichert.
+![Setup-Parameter](https://github.com/user-attachments/assets/26c3fc61-c447-48ae-8e59-89e897e6706d)
+
+
+___
+## 30) Fehlerbehandlung
+### 30.1) Select & CONNECT
+Jedes Mal, wenn ein BLE-Device gefunden wird, wird sofort die Liste der gefundenen Devices gefiltert. Wenn du also genau zu dem Zeitpunkt nach dem Eintragen in die Liste
+und vor dem Filtern der Liste ein Device ausgewählt wird, dann kann der effekt auftreten, dass nicht das gewünschte Device ausgewählt wurde.  
+Deswegen trenne ich auch den Vorgang "**Pick aus der Liste**" von "**CONNECT**".  
+Mit geänderter Logik ab **v0.5.10b** wird eine **HiddenListView** verwendet.  
+Das sollte die Situation unterbinden, dass kurzfristig auch NICHT MC-Devices angezeigt werden.  
+Es kann aber trotzdem nicht verhindert werden, das sich die Reihenfolge der Devices kurzzeitig ändern, da das von der BLE-Implementierung abhängt.
+Ich kann es nicht beeinflussen, wie schnell welches BLE-Device reagiert.  
+
+=> bitte etwas länger warten, bis sich der Laufbalken darüber nicht mehr bewegt.
+
+Und Timeout kommen zeitweise auch vor, wenn ein BLE-Device zu langsam ist.
+
 
 ___
 ## 80) Protokoll-Datei (Log-File) [ab V0.5.10]
