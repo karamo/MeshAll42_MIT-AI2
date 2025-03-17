@@ -4,7 +4,9 @@
 ## 1) Versionen
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
 
-### 1.3) MeshAll42_V0_6_0.apk - preview
+### 1.3) MeshAll42_V0_5_10.apk
+Einige Ergänzungen und Issues behoben.  
+Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.10)  
 * +Sprachausgabe der Nachrichten (experimentell)
 * +verschiedene Sound-Effekte (abschaltbar)
 * +Protokoll-Datei (LogFile) mit Rohdaten (Bytes) und dekodiert
@@ -13,9 +15,7 @@ Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die
 ___
 ### 1.2) MeshAll42_V0_5_5.apk
 Einige Ergänzungen und Issues behoben.  
-Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.5)  
-
-* Schalten von einigen Funktionen ist bereits realisiert. Sensoren fehlen noch. Dafür muss ich erst die kleinen Boards finden, anbauen und in der APP auswerten, was in **v0.5.6** kommen wird.
+* Schalten von einigen Funktionen ist bereits realisiert. Sensoren fehlen noch. Dafür muss ich erst die kleinen Boards finden, anbauen und in der APP auswerten, was ab **v0.6.0** kommen wird.
 * **GPS** sollte schon funktionieren, habe ich aber auch noch nicht am Board. Falls man es einschaltet und es wird nicht gefunden, dann schaltet es sich richtigerweise von selber wieder aus.
 ___
 ### 1.1) MeshAll42_V0_5_4.apk
@@ -57,4 +57,4 @@ ___
 * das Filtern der Msg-Pakete ist vorbereitet, aber noch nicht implementiert. Daher werden alle Pakete im Chat angezeigt.  
  ![chatElemente](https://github.com/user-attachments/assets/6d76f70e-b34b-4faf-b2f6-695da1e3d675)
 ___
-***:copyright: 12.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 17.3.2025 by OE3WAS - Wolfgang***
