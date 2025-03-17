@@ -1,5 +1,5 @@
 # Android APP - Releases
-=> [Installation & Bedienung](https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/Versionen/README.md#2-wichtige-hinweise-zur-installation-android) 
+=> [Bedienung](https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/Versionen/README.md#2-wichtige-hinweise-zur-installation-android) 
 
 ## 1) Versionen
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
@@ -36,10 +36,7 @@ Gegenüber V0.5.3 Verbesserte und erweiterte Version beherrscht u.a. folgende Gr
 
 Empfangene Msg und andere Datenpakete werden decodiert und dargestellt.
 ___
-## 2) wichtige Hinweise zur Installation (Android)
-* APPs, die mit dem AI2 erstellt wurden, sollten ab **Android V5+** lauffähig sein. Installiert und getestet wurde es unter **Android 8** und **Android 13** und **Android 15**
-* Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
-* Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
+
 
 ## 2.1) und Bedienung (V 0.5.5)
 * Die 1. Buttonreihe schaltet die Sichtbarkeit der einzelnen Bereiche um:  
