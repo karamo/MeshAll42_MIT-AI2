@@ -22,7 +22,7 @@ ___
 * mit dem Button **[set]** wird der Befehl mit dem Parameter abgesendet. Derzeit wird generell der Notifier "Wait for REBOOT..." ausgelöst, was aber bei einigen Befehlen nicht erforderlich wäre. Wird in einer Folgeversion geklärt.  
   ![CommandsParameter](https://github.com/user-attachments/assets/90c898f1-52be-435a-a20f-41ca8e16cd09)
 ___
-* Das Filtern der Msg-Pakete ist ab **v 0.5.10b** teilweise möglich (Para, CET, ACK) und kann als **setDefault** gesetzt werden.
+* Das Filtern der Msg-Pakete ist ab **v 0.5.10b** teilweise möglich (Para, CET, ACK) und kann auch wahlweise als **setDefault** gesetzt werden.
 * Die Auswahl der Sound-Effekte wird auch lokal in der APP gespeichert.
 ![Setup-Parameter](https://github.com/user-attachments/assets/26c3fc61-c447-48ae-8e59-89e897e6706d)
 
