@@ -1,5 +1,5 @@
 # MeshAll42_MIT-AI2
-[**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) kompatible APP für Android. Zuletzt gestestet mit der **FW 4.34u**.
+[**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) kompatible APP für Android. Zuletzt gestestet mit der **FW 4.34v**.
 
 ## 1) Download & Installation (Android)
 * Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.10)
