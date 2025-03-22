@@ -89,6 +89,14 @@ Das Ende dieser Übertragung wird durch ein spezielles Datenpaket signalisiert:
 | D{"TYP":"CONFFIN"} |
 |---|
 
+#### 1.2.1.1) Timestamp
+Anschließend an **CONFFIN** schickt die APP ein Timestamp-Paket, z.B.:  
+```
+06 20 CF 7D DE 67 
+[BLE] Timestamp from phone (sec) <UTC>: 1742634447 -> 2025.03.22 09:07:27
+```
+![grafik](https://github.com/user-attachments/assets/3630bd99-e84d-4d96-b1a1-6ccc4b72c983)
+
 Daran anschließend können eigene Commands & Messages an die FW geschickt werden.
 
 #### 1.2.2) (Text)Messages & Commands an die FW via BLE senden
