@@ -34,7 +34,7 @@ schwieriger gestaltet.
 * `*:` = Message to all
 * `123:` = Message to Group __*123*__
 * `OE3WAS-12:` = DM (DirectMessage) to __*OE3WAS-12*__
-* `*:{CET}` = Date & Time
+* `*:{CET}` = Date & Time (wird nur übertragen, wenn GW ist; bei CL nicht)
 * `*!` = POS-String
 
 * DM ist dann, wenn DM == eigener CALL
@@ -134,4 +134,4 @@ Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 [TODO] weitere Infos folgen ...
 
 ___
-***:copyright: 8.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 22.3.2025 by OE3WAS - Wolfgang***
