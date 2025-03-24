@@ -14,6 +14,7 @@ Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/rele
 * +GW/CL in Statuszeile
 * +copy->download @ disconnect & back
 * +Log-Datei abschaltbar
+* [CONNECT] & [disCONNECT] in einem Button vereint
 
 ### 1.3) MeshAll42_V0_5_10.apk
 Einige Ergänzungen und Issues behoben.  
