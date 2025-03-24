@@ -3,6 +3,18 @@
 ## 1) Versionen
 Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die neueste Version steht als erster Punkt hier.
 
+### 1.4) MeshAll42_V0_5_11.apk - aviso
+Einige Ergänzungen und Issues behoben.  
+Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.11)  
+* +wahlweise Chat-Elemente (#5)
+* +Sensoren Readout & Buttons ON/OFF: BMP280, BME280, BME680, 1-Wire DS18B20 (#15)
+* BLE-Liste sicherere Handhabung (#27)
+* +POS-Pakete extrahieren & darstellen (#28 u. #29)
+* +eigene Aussendungen anzeigen
+* +GW/CL in Statuszeile
+* +copy->download @ disconnect & back
+* +Log-Datei abschaltbar
+
 ### 1.3) MeshAll42_V0_5_10.apk
 Einige Ergänzungen und Issues behoben.  
 Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.10)  
