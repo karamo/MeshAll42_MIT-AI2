@@ -2,16 +2,29 @@
 [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) kompatible APP für Android. Zuletzt gestestet mit der **FW 4.34v**.
 
 ## 1) Download & Installation (Android)
-* Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.10)
+* Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.11)
 * APPs, die mit dem AI2 erstellt wurden, sollten ab **Android V5+** lauffähig sein. Installiert und getestet wurde unter **Android 8** und **Android 13** und **Android 15**
 * Grundsätzlich ist **Google Play Protect** eingeschaltet. Der Durchlauf dauert einige Zeit.
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 
-## 2) Bedienung (V 0.5.10) [in Arbeit]
+## 2) Bedienung (V 0.5.11) [in Arbeit]
 * Die 1. Buttonreihe schaltet die Sichtbarkeit der einzelnen Bereiche um:  
- **[BLE] [INFO] [CHAT] [CONFIG] [SETUP&DEBUG]**  
-![ButtonsBereiche](https://github.com/user-attachments/assets/061460c8-9b4d-4019-ae09-b67d06d1a605)  
-___
+ **[BLE] [INFO] [CHAT] [CONFIG] [SETUP] [DEBUG]**  
+![ButtonsBereiche](https://github.com/user-attachments/assets/e1928b68-b678-4c8a-bb95-f70c6a4f4c90)
+
+### 2.1) SCAN & CONNECT
+Nach dem [SCAN] wird die Lister der gefundenen MT-Nodes angezeigt und [CONNECT] wird freigegeben.
+![v0 5 11_SCAN-CONNECT](https://github.com/user-attachments/assets/870b7fd5-23b3-43e1-acd3-7c538525d25a)
+
+Nach [CONNECT] wechselt der Button auf [disCONN] (disCONNECT).
+![v0 5 11_CONNECTED](https://github.com/user-attachments/assets/42749bee-f377-4d78-831d-f035095b511f)
+
+### 2.2) INFO
+Am [INFO]-Screen werden die Parameter der Node, GPS und die Sensor-Werte angezeigt.
+![v0 5 11_INFO-Screen](https://github.com/user-attachments/assets/73d69c23-f302-469a-b4e6-2fde3e5b7244)
+
+
+### 2.3) CHAT
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
 * **[CLR]** löscht die Chat-Einträge (Liste unterhalb), **[CL]** löscht das Eingabefeld, der **[Flieger]** sendet die Message.
 * **DM/GRP** Eingabefeld für **Direct-Message** & **Group-Message**.
