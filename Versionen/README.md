@@ -53,4 +53,4 @@ Gegenüber V0.5.3 Verbesserte und erweiterte Version beherrscht u.a. folgende Gr
 Empfangene Msg und andere Datenpakete werden decodiert und dargestellt.
 
 ___
-***:copyright: 17.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 27.3.2025 by OE3WAS - Wolfgang***
