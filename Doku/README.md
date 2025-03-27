@@ -1,5 +1,5 @@
 # MeshAll42_MIT-AI2
-[**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) kompatible APP für Android. Zuletzt gestestet mit der **FW 4.34v**.
+[**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) kompatible APP für Android. Zuletzt gestestet mit der **FW 4.34v.03.25**.
 
 ## 1) Download & Installation (Android)
 * Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.11)
@@ -13,16 +13,15 @@
 ![ButtonsBereiche](https://github.com/user-attachments/assets/e1928b68-b678-4c8a-bb95-f70c6a4f4c90)
 
 ### 2.1) SCAN & CONNECT
-Nach dem [SCAN] wird die Lister der gefundenen MT-Nodes angezeigt und [CONNECT] wird freigegeben.
+Nach dem **[SCAN]** wird die Lister der gefundenen MT-Nodes angezeigt und **[CONNECT]** wird freigegeben.
 ![v0 5 11_SCAN-CONNECT](https://github.com/user-attachments/assets/870b7fd5-23b3-43e1-acd3-7c538525d25a)
 
-Nach [CONNECT] wechselt der Button auf [disCONN] (disCONNECT).
+Nach **[CONNECT]** wechselt der Button auf **[disCONN]** (disCONNECT).
 ![v0 5 11_CONNECTED](https://github.com/user-attachments/assets/42749bee-f377-4d78-831d-f035095b511f)
 
 ### 2.2) INFO
-Am [INFO]-Screen werden die Parameter der Node, GPS und die Sensor-Werte angezeigt.
+Am **[INFO]**-Screen werden die **Parameter** der Node, **GPS** und die **Sensor-Werte** angezeigt.
 ![v0 5 11_INFO-Screen](https://github.com/user-attachments/assets/73d69c23-f302-469a-b4e6-2fde3e5b7244)
-
 
 ### 2.3) CHAT
 * im Bereich **CHAT** sind unter dem Button **[commands]** mehrere Befehle verfügbar.
@@ -43,8 +42,8 @@ ___
 ___
 ## 30) Fehlerbehandlung
 ### 30.1) Select & CONNECT
-Jedes Mal, wenn ein BLE-Device gefunden wird, wird sofort die Liste der gefundenen Devices gefiltert. Wenn du also genau zu dem Zeitpunkt nach dem Eintragen in die Liste
-und vor dem Filtern der Liste ein Device ausgewählt wird, dann kann der effekt auftreten, dass nicht das gewünschte Device ausgewählt wurde.  
+Jedes Mal, wenn ein BLE-Device gefunden wird, wird sofort die Liste der gefundenen Devices gefiltert. Wenn man also genau zu dem Zeitpunkt nach dem Eintragen in die Liste
+und vor dem Filtern der Liste ein Device ausgewählt wird, dann kann der Effekt auftreten, dass nicht das gewünschte Device ausgewählt wurde.  
 Deswegen trenne ich auch den Vorgang "**Pick aus der Liste**" von "**CONNECT**".  
 Mit geänderter Logik ab **v0.5.10b** wird eine **HiddenListView** verwendet.  
 Das sollte die Situation unterbinden, dass kurzfristig auch NICHT MC-Devices angezeigt werden.  
@@ -53,7 +52,7 @@ Ich kann es nicht beeinflussen, wie schnell welches BLE-Device reagiert.
 
 => bitte etwas länger warten, bis sich der Laufbalken darüber nicht mehr bewegt.
 
-Und Timeout kommen zeitweise auch vor, wenn ein BLE-Device zu langsam ist.
+Und Timeout kommen zeitweise auch vor, wenn ein BLE-Device zu langsam ist. Dann nochmal ein **[CONNECT]** durchführen.
 
 
 ___
@@ -106,4 +105,4 @@ ACK-Pakete werden in 3 Zeilen dargestellt:
 | Parameter: | `01:18:12 . 15.03.2025 01:18:12 \|#67D399B1 🔷 OE1XAR-45,OE3WAS-12 ➜ * 🔷  H:B2 HW:0 M:136 FCS:CC0E FW:0 LH:131 #` |
 
 ___
-***:copyright: 17.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 27.3.2025 by OE3WAS - Wolfgang***
