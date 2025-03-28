@@ -8,16 +8,20 @@
 * Das **Google Play Protect** zickt herum und sagt mir dauernd, dass die Internetverbindung schlecht wäre. Daher musste ich es es ausschalten und dann ging die Installation durch.
 
 ## 2) Bedienung (V 0.5.11) [in Arbeit]
+* In der **Titelzeile** wird der **Titel_Version** angezeigt. Über das Menü rechts **⋮** kann die APP beendet werden.
+![v0 5 11_Titel](https://github.com/user-attachments/assets/f5f89216-b1e5-47e5-bfd1-16112cb718dc)
+
 * Die 1. Buttonreihe schaltet die Sichtbarkeit der einzelnen Bereiche um:  
  **[BLE] [INFO] [CHAT] [CONFIG] [SETUP] [DEBUG]**  
 ![ButtonsBereiche](https://github.com/user-attachments/assets/e1928b68-b678-4c8a-bb95-f70c6a4f4c90)
 
 ### 2.1) SCAN & CONNECT
 Nach dem **[SCAN]** wird die Lister der gefundenen MT-Nodes angezeigt und **[CONNECT]** wird freigegeben.
-![v0 5 11_SCAN-CONNECT](https://github.com/user-attachments/assets/870b7fd5-23b3-43e1-acd3-7c538525d25a)
+![v0 5 11_SCAN-CONNECT](https://github.com/user-attachments/assets/9f68fd4f-f102-43f7-8a2c-f9959b8c703c)
 
 Nach **[CONNECT]** wechselt der Button auf **[disCONN]** (disCONNECT).
-![v0 5 11_CONNECTED](https://github.com/user-attachments/assets/42749bee-f377-4d78-831d-f035095b511f)
+![v0 5 11_CONNECTED](https://github.com/user-attachments/assets/88f1dcdd-f977-4247-88a6-2c56e696d079)
+
 
 ### 2.2) INFO
 Am **[INFO]**-Screen werden die **Parameter** der Node, **GPS** und die **Sensor-Werte** angezeigt.
