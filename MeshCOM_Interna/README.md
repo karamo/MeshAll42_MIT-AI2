@@ -141,5 +141,36 @@ Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
 
 [TODO] weitere Infos folgen ...
 
+
+## 2) Externe Hardware
+Als "externe Hardware" werden verschiedene Sensoren und eine Digital-I/O-Erweiterung beschrieben.
+
+### 2.1) Sensoren
+In der MT-FW 4.34v werden verschiedene Sensoren unterstützt. Nicht alle sind derzeit ausreichend beschrieben. Daher versuche ich hier ein möglichst detailierte Beschreibung zu erstellen, mit den einzelnen Parametern zu den jeweiligen Sensoren.
+
+#### 2.1.1) Umweltdaten
+Die wichtigsten üblichen Umweltdaten sind: **Temperatur** [°C], **rel.Feuchte** [%rH], **Luftdruck** [hPa]  
+Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
+
+| Type | IO | Addr | Messwerte |
+|---|---|---|---|
+| BMP280 | I²C | 76 | T* [°C] - P [hPa]<br>/T=[°C] /P=[hPa] |
+| BME280 | I²C | 76 | T* [°C] - H [%rH] - P [hPa]<br>/T=[°C] /H=[%rH] /P=[hPa] /Q=[hPa]|
+| BME680 | I²C | 76/77 | T [°C] - H [%rH] - P [hPa] - GASres [kΩ]<br>/T=[°C] /H=[%rH] /P=[hPa] /F=[m] /G=[kΩ] /V=3 |
+| DS18B20 | 1-W | -- | T [°C]<br>/O=[°C] |
+| MCU811 | I²C | .. | CO<sub>2</sub> [ppm] |
+
+**Addr** in Hex  
+**/X** = Kennung in POS-Msg
+**(*)** = die Temperatur dient zur internen Kompensation und ist daher etwas höher als reale Umwelt.  
+**MCU811** WAK-GND Verbindung zusätzlich zu I²C.
+
+#### 2.1.2) Messwerte
+Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor) unterstützt.
+
+#### 2.1.3) Digital-I/O
+
+[TODO] in Arbeit
+
 ___
-***:copyright: 22.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 28.3.2025 by OE3WAS - Wolfgang***
