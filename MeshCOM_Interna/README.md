@@ -158,19 +158,23 @@ Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
 | BME280 | I²C | 76 | T* [°C] - H [%rH] - P [hPa]<br>/T=[°C] /H=[%rH] /P=[hPa] /Q=[hPa]|
 | BME680 | I²C | 76/77 | T [°C] - H [%rH] - P [hPa] - GASres [kΩ]<br>/T=[°C] /H=[%rH] /P=[hPa] /F=[m] /G=[kΩ] /V=3 |
 | DS18B20 | 1-W | -- | T [°C]<br>/O=[°C] |
-| MCU811 | I²C | .. | CO<sub>2</sub> [ppm] |
+| MCU811 | I²C | 5A | CO<sub>2</sub> [ppm]<br>/C=[ppm] /V=2 |
 
 **Addr** in Hex  
-**/X** = Kennung in POS-Msg
+**/X** = Kennung in POS-Msg (V=2 hat Priorität gegenüber V=3)  
 **(*)** = die Temperatur dient zur internen Kompensation und ist daher etwas höher als reale Umwelt.  
 **MCU811** WAK-GND Verbindung zusätzlich zu I²C.
 
 #### 2.1.2) Messwerte
-Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor) unterstützt.
+Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor in der 20A-Ausführung mit einem **R<sub>S</sub>=0,002Ω** [R002]) unterstützt.
+
+| Type | IO | Addr | Messwerte |
+|---|---|---|---|
+| INA226 | I²C | 4. | /B=proz[%], /U=vbus[V], /I=vcurrent[A] /V=5 |
 
 #### 2.1.3) Digital-I/O
-
-[TODO] in Arbeit
+Es wird ein MCP23017 16-Pin-I/O auf I²C Addr=... unterstützt.  
+Die Steuerung ist aber nicht via BLE möglich, nur UDP. Siehe Web-Client.
 
 ___
 ***:copyright: 28.3.2025 by OE3WAS - Wolfgang***
