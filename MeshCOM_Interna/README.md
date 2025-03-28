@@ -170,7 +170,7 @@ Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sens
 
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
-| INA226 | I²C | 4. | /B=proz[%], /U=vbus[V], /I=vcurrent[A] /V=5 |
+| INA226 | I²C | 4. | /U=vbus[V], /I=vcurrent[A] /V=5 |
 
 #### 2.1.3) Digital-I/O
 Es wird ein MCP23017 16-Pin-I/O auf I²C Addr=... unterstützt.  
