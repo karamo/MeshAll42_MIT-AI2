@@ -166,7 +166,7 @@ Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
 **MCU811** WAK-GND Verbindung zusätzlich zu I²C.
 
 #### 2.1.2) Messwerte
-Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor in der 20A-Ausführung mit einem **R<sub>S</sub>=0,002Ω** [R002]) unterstützt.
+Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor in der 20A-Ausführung mit einem **R<sub>S</sub>=2 mΩ** [R002]) unterstützt.
 
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
