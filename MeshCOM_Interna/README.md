@@ -180,5 +180,14 @@ Mit neuerer FW auch via BLE.
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
 | MCP2307 | I²C | 20 | BLE: "TYP":"IO" ... |
+
+<ins>Befehle via Terminal & APP:</ins>  
+**--setio clear** setzt alle IOs auf IN
+commandAction [--setio clear] ble:1
+
+? setout ** (Z.2118)
+? setio **
+
+
 ___
 ***:copyright: 3.4.2025 by OE3WAS - Wolfgang***
