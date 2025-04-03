@@ -154,11 +154,11 @@ Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
 
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
-| BMP280 | I²C | 76 | T* [°C] - P [hPa]<br>/T=[°C] /P=[hPa] |
-| BME280 | I²C | 76 | T* [°C] - H [%rH] - P [hPa]<br>/T=[°C] /H=[%rH] /P=[hPa] /Q=[hPa]|
-| BME680 | I²C | 76/77 | T [°C] - H [%rH] - P [hPa] - GASres [kΩ]<br>/T=[°C] /H=[%rH] /P=[hPa] /F=[m] /G=[kΩ] /V=3 |
-| DS18B20 | 1-W | -- | T [°C]<br>/O=[°C] |
-| MCU811 | I²C | 5A | CO<sub>2</sub> [ppm]<br>/C=[ppm] /V=2 |
+| BMP280 | I²C | 76 | T* [°C] - P [hPa]<br>/T=[°C] /P=[hPa]<br>BLE: ... |
+| BME280 | I²C | 76 | T* [°C] - H [%rH] - P [hPa]<br>/T=[°C] /H=[%rH] /P=[hPa] /Q=[hPa]<br>BLE: ...|
+| BME680 | I²C | 76/77 | T [°C] - H [%rH] - P [hPa] - GASres [kΩ]<br>/T=[°C] /H=[%rH] /P=[hPa] /F=[m] /G=[kΩ] /V=3<br>BLE: ... |
+| DS18B20 | 1-W | -- | T [°C]<br>/O=[°C]<br>BLE: ... |
+| MCU811 | I²C | 5A | CO<sub>2</sub> [ppm]<br>/C=[ppm] /V=2<br>BLE: ... |
 
 * **Addr** in Hex  
 * **/X** = Kennung in POS-Msg (V=2 hat Priorität gegenüber V=3)  
@@ -170,12 +170,15 @@ Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sens
 
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
-| INA226 | I²C | 4. | /U=vbus[V], /I=vcurrent[A] /V=5 |
+| INA226 | I²C | 40 | /U=vbus[V], /I=vcurrent[A] /V=5<br>BLE: ... |
 
 #### 2.1.3) Digital-I/O
-Es wird ein **MCP23017** 16-Pin-I/O auf I²C Addr= 0x5A unterstützt.  
+Es wird ein **MCP23017** 16-Pin-I/O auf I²C Addr=0x20 unterstützt.  
 Die Steuerung ist via Terminal & UDP (Web-Client) möglich.  
 Mit neuerer FW auch via BLE.
 
+| Type | IO | Addr | Messwerte |
+|---|---|---|---|
+| MCP2307 | I²C | 20 | BLE: "TYP":"IO" ... |
 ___
 ***:copyright: 3.4.2025 by OE3WAS - Wolfgang***
