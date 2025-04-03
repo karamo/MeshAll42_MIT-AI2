@@ -160,10 +160,10 @@ Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
 | DS18B20 | 1-W | -- | T [°C]<br>/O=[°C] |
 | MCU811 | I²C | 5A | CO<sub>2</sub> [ppm]<br>/C=[ppm] /V=2 |
 
-**Addr** in Hex  
-**/X** = Kennung in POS-Msg (V=2 hat Priorität gegenüber V=3)  
-**(*)** = die Temperatur dient zur internen Kompensation und ist daher etwas höher als reale Umwelt.  
-**MCU811** WAK-GND Verbindung zusätzlich zu I²C.
+* **Addr** in Hex  
+* **/X** = Kennung in POS-Msg (V=2 hat Priorität gegenüber V=3)  
+* **(*)** = die Temperatur dient zur internen Kompensation und ist daher etwas höher als reale Umwelt.  
+* **MCU811** WAK-GND Verbindung zusätzlich zu I²C.
 
 #### 2.1.2) Messwerte
 Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sensor in der 20A-Ausführung mit einem **R<sub>S</sub>=2 mΩ** [R002]) unterstützt.
