@@ -6,10 +6,11 @@ Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die
 ### 1.5) MeshAll42_V0.5.12.apk - aviso
 Einige Ergänzungen und Issues behoben.  
 Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.12)  
-* (#15) Sensor MCU-811 ergänzt
+* (#15) Sensor MCU-811 ergänzt.
 * HW 45 ergänzt
 * GPS farbliche Info
-* (#xx) MCP23017 Unterstützung mit neuerer FW (derzeit nur Test-Compile v. OE3WAS)
+* (#15) Sensor INA226 (20A)
+* MCP23017 Unterstützung wenn FW 4.34w.04.07 verfügbar ist.
 
 
 ### 1.4) MeshAll42_V0_5_11.apk
@@ -62,4 +63,4 @@ Gegenüber V0.5.3 Verbesserte und erweiterte Version beherrscht u.a. folgende Gr
 Empfangene Msg und andere Datenpakete werden decodiert und dargestellt.
 
 ___
-***:copyright: 3.4.2025 by OE3WAS - Wolfgang***
+***:copyright: 7.4.2025 by OE3WAS - Wolfgang***
