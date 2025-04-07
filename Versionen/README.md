@@ -11,6 +11,7 @@ Download [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/rele
 * GPS farbliche Info
 * (#15) Sensor INA226 (20A)
 * MCP23017 Unterstützung wenn FW 4.34w.04.07 verfügbar ist.
+* Multi-Command-Line verwenden.
 
 
 ### 1.4) MeshAll42_V0_5_11.apk
