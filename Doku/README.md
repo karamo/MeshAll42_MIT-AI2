@@ -88,25 +88,25 @@ Jedes einzelne Pakete wird in 2-3 Zeilen dargestellt.
 #### 80.2.4) Folgezeile ID = `>` = Text-Message Paket
 Text-Message Pakete werden in 3 Zeilen dargestellt:
 
-| Rohdaten: | `01:22:19 $ 40 3A 61 ... D4 C8 38 00` |
+| Rohdaten: "**$**" | `01:22:19 $ 40 3A 61 ... D4 C8 38 00` |
 |:---|:---|
-| Messagetext: | `01:22:19 > Eintrag für mein Proto testen` |
-| Parameter: | `01:22:19 . 15.03.2025 01:22:19 \|#8C59DA61 🔷 OE3WAS,OE3WAS-12 ➜ * 🔷  H:B4 HW:0 M:136 FCS:4914 FW:0 LH:131` |
+| Messagetext: "**>**" | `01:22:19 > Eintrag für mein Proto testen` |
+| Parameter: "**.**" | `01:22:19 . 15.03.2025 01:22:19 \|#8C59DA61 🔷 OE3WAS,OE3WAS-12 ➜ * 🔷  H:B4 HW:0 M:136 FCS:4914 FW:0 LH:131` |
 
 #### 80.2.5) Folgezeile ID = `> @A` = ACK-Message-Paket
 ACK-Pakete werden in 3 Zeilen dargestellt:
 
-| Rohdaten: | `01:12:09 $ 40 41 9A 2C EC 05 00 00 67 D4 BF 50 00` |
+| Rohdaten: "**$**" | `01:12:09 $ 40 41 9A 2C EC 05 00 00 67 D4 BF 50 00` |
 |:---|:---|
 | dekodiert: **@A** = ACK | `01:12:09 > @A  0000 67D4 BF50` |
-| Parameter: | `01:12:09 . 15.03.2025 01:12:09 #05EC2C9A 🔷  ➜  🔷` |
+| Parameter: "**.**" | `01:12:09 . 15.03.2025 01:12:09 #05EC2C9A 🔷  ➜  🔷` |
 
 #### 80.2.6) Folgezeile ID = `> {CET}` = TimeStamp-Message
 
 | Rohdaten: | `01:18:12 $ 40 3A B1 ... 67 D4 C7 42 00` |
 |:---|:---|
-| Timestamp: | `01:18:12 > {CET}2025-03-15 00:18:10` |
-| Parameter: | `01:18:12 . 15.03.2025 01:18:12 \|#67D399B1 🔷 OE1XAR-45,OE3WAS-12 ➜ * 🔷  H:B2 HW:0 M:136 FCS:CC0E FW:0 LH:131 #` |
+| Timestamp: "**>**" | `01:18:12 > {CET}2025-03-15 00:18:10` |
+| Parameter: "**.**" | `01:18:12 . 15.03.2025 01:18:12 \|#67D399B1 🔷 OE1XAR-45,OE3WAS-12 ➜ * 🔷  H:B2 HW:0 M:136 FCS:CC0E FW:0 LH:131 #` |
 
 ___
-***:copyright: 27.3.2025 by OE3WAS - Wolfgang***
+***:copyright: 8.4.2025 by OE3WAS - Wolfgang***
