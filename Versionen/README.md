@@ -6,7 +6,7 @@ Hier sind die Versionen/Releases in umgekehrter Reihenfolge aufgelistet, dh. die
 ### 1.6) MeshAll42_V0.5.13.apk - aviso
 Einige Ergänzungen und Issues behoben.  
 * neues "--tel" Paket unterstützt  
-### Download - noch nicht verfügbar, da ich noch die letzten Neuerungen der FW v4.34x.04.29.3 einbauen muss !!!
+### Download - noch nicht verfügbar, da ich noch die letzten Neuerungen der FW v4.34z einbauen muss !!!
 [Releases -> Tags ...](https://github.com/karamo/MeshAll42_MIT-AI2/releases/tag/v0.5.13)  
 
 
