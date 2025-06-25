@@ -105,16 +105,19 @@ ACK-Pakete werden in 3 Zeilen dargestellt:
 | dekodiert: **@A** = ACK | `01:12:09 > @A  0000 67D4 BF50` |
 | Parameter: "**.**" | `01:12:09 . 15.03.2025 01:12:09 #05EC2C9A 🔷  ➜  🔷` |
 
-#### 80.2.7) Folgezeile ID = `> {CET}` = TimeStamp-Message
+#### 80.2.7) ID = `> {CET}` = TimeStamp-Message
 
 | Rohdaten: | `01:18:12 $ 40 3A B1 ... 67 D4 C7 42 00` |
 |:---|:---|
 | Timestamp: "**>**" | `01:18:12 > {CET}2025-03-15 00:18:10` |
 | Parameter: "**.**" | `01:18:12 . 15.03.2025 01:18:12 \|#67D399B1 🔷 OE1XAR-45,OE3WAS-12 ➜ * 🔷  H:B2 HW:0 M:136 FCS:CC0E FW:0 LH:131 #` |
 
-#### 80.2.8) Folgezeile ID = `<`
-`18:31:15 < --sendpos`  
-von der APP an die Node-FW gesendete Message, hier ein **Command**.
+#### 80.2.8) ID = `<`
+
+| Timestamp: "**<**" | `18:31:15 < --sendpos` |
+|---|---|
+
+von der APP an die Node-FW gesendete Message, hier ein **Command** "`--sendpos`".
 
 ___
 ***:copyright: 25.6.2025 by OE3WAS - Wolfgang***
