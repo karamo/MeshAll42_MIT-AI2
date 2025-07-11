@@ -128,19 +128,18 @@ Bei den Commands ist Groß-/Kleinschreibung unbedeutend und wird hier nur der Kl
 #### 1.2.3) Config Messages
 Es gibt eine Gruppe von Commands, die einen anderen ID habe, aber grundsätzlich gleich aufgebaut sind.
 Der jeweilige Command hat aber logischerweise eine eigene Syntax.  
-Einige dieser Config Messages sind auch möglich als `--command` abzusenden.
+Mittlerweile sind alle diese Config Messages auch als `--command` abzusenden.
 
 <ins>Msg-ID:</ins>
-* 0x20 - Timestamp from phone [4B]
-* 0x50 - Callsign (`--setCALL`) [1B len - Callsign]
-* 0x55 - Wifi SSID (`--setSSID`) and PWD (`--setPWD`) [1B - SSID Length - SSID - 1B PWD Length - PWD]
-* 0x70 - Latitude (`--setLAT`) [1B length + 1B Msg-ID + 4B lat + 1B save_flag]
-* 0x80 - Longitude (`--setLON`) [1B length + 1B Msg-ID + 4B lon + 1B save_flag]
-* 0x90 - Altitude (`--setALT`) [1B length + 1B Msg-ID + 4B alt + 1B save_flag]
+* 0x20 - Timestamp from phone (`--settime`) [4Bytes]
+* 0x50 - Callsign (`--setCALL`) [1Byte len - Callsign]
+* 0x55 - Wifi SSID (`--setSSID`) and PWD (`--setPWD`) [1Byte - SSID Length - SSID - 1Byte PWD Length - PWD]
+* 0x70 - Latitude (`--setLAT`) [1Byte length + 1Byte Msg-ID + 4Bytes lat + 1Byte save_flag]
+* 0x80 - Longitude (`--setLON`) [1Byte length + 1Byte Msg-ID + 4Bytes lon + 1Bytes save_flag]
+* 0x90 - Altitude (`--setALT`) [1Byte length + 1Byte Msg-ID + 4Bytes alt + 1Byte save_flag]
 * 0x95 - APRS Symbols (`--symID` `--symCD`)
-* 0xF0 - Save Settings to Flash
+* 0xF0 - Save Settings to Flash (`--save`)
 * **save_flag** is `0x0A` for save and `0x0B` for don't save
-* If phone send periodicaly position, we don't save them. (???)  
 (Aus Z.365ff https://github.com/icssw-org/MeshCom-Firmware/blob/oe1kfr_434q/src/phone_commands.cpp)
 
 
