@@ -173,20 +173,28 @@ Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sens
 | INA226 | I²C | 40 | /U=vbus[V], /I=vcurrent[A] /V=5<br>BLE: ... |
 
 #### 2.1.3) Digital-I/O
-Es wird ein **MCP23017** 16-Pin-I/O auf I²C Addr=0x20 unterstützt.  
-Die Steuerung ist via Terminal & UDP (Web-Client) möglich.  
-Mit neuerer FW auch via BLE.
+Es wird ein **MCP23017** 16-Pin-I/O auf **I²C** Addr=**0x20** unterstützt.  
+Die 16 IOs sind durch A0..A7, B0..B7 gekennzeichnet.
+Die Steuerung ist via **Terminal**, **BLE** & **UDP** (Web-Client) möglich.  
 
-| Type | IO | Addr | Messwerte |
+| Type | IO | Addr | Messwerte als BLE-JSON Paket |
 |---|---|---|---|
-| MCP2307 | I²C | 20 | BLE: "TYP":"IO" ... |
+| MCP23017 | I²C | 20 | D{"TYP":"IO","MCP23017":true,"AxOUT":"00000000","AxVAL":"11111111","BxOUT":"00000000","BxVAL":"11111111"} |
 
-<ins>Befehle via Terminal & APP:</ins>  
-**--setio clear** setzt alle IOs auf IN
-commandAction [--setio clear] ble:1
+| Parameter | |
+|---|---|
+| MCP23017 | {true \| false} = erkannt? |
+| AxOUT | "00000000" = A7..A0, "1" = OUTPUT, "0" = INPUT |
+| AxVAL | "00000000" = A7..A0, "1" = HIGH, "0" = LOW |
+| BxOUT | "00000000" = B7..B0, "1" = OUTPUT, "0" = INPUT |
+| BxVAL | "00000000" = B7..B0, "1" = HIGH, "0" = LOW |
 
-? setout ** (Z.2118)
-? setio **
+<ins>Befehle via Terminal & BLE-APP:</ins>
+* **`--io`** liefert auf BLE ein JSON-Paket
+* **`--setio clear`** setzt alle IOs auf INPUT
+* **`--setio {A0..A7,B0..B7} {in | out}`** setzt die Funktion des gewählten IO auf **INPUT** oder **OUTPUT**
+* **`--setout {A0..A7,B0..B7} {high | low}`** setzt den gewählten IO auf **HIGH** oder **LOW**
+
 
 
 ___
