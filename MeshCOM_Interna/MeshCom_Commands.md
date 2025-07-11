@@ -152,7 +152,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "setlon "
 "setalt "
 "setrtc "
-"io"
+* "io"
 "setio clear"
 "setout "
 "setio "
