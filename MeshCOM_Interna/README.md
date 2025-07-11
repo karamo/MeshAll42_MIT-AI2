@@ -198,4 +198,4 @@ Die Steuerung ist via **Terminal**, **BLE** & **UDP** (Web-Client) möglich.
 
 
 ___
-***:copyright: 3.4.2025 by OE3WAS - Wolfgang***
+***:copyright: 11.7.2025 by OE3WAS - Wolfgang***
