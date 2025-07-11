@@ -2,7 +2,7 @@
 Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ).
 
 * Alle Befehle werden mit **`"--"`** eingeleitet und sind via Terminal und BLE absetzbar.
-* Die Beschreibung einiger, einzelner Befehle erfolgt u.U. an anderer Stelle, die jeweils verlinkt ist.
+* Einzelne Befehle sind mit **`"*"`** gekennzeichnet. Diese sind hier https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/MeshCom-Commands_info.md genauer beschrieben.
 * Bei Befehlen, die ein **`" "`** (Leerzeichen) vor dem **"** haben, sind weitere Parameter erforderlich.
 * **Disclamer**: manche Befehle sind u.U. nicht für normale Verwendung verfügbar u/o unterliegen bestimmter Einschränkungen!
 
@@ -152,10 +152,10 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "setlon "
 "setalt "
 "setrtc "
-* "io"
-"setio clear"
-"setout "
-"setio "
+* --io
+* --setio clear
+* --setout {A0..A7,B0..B7} {high | low}
+* --setio  {A0..A7,B0..B7} {in | out}
 "setctry "
 "wifitxpower "
 "txpower "
