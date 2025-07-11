@@ -18,8 +18,8 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "postime "
 "volt"
 "proz"
-* --setinfo {off | on}
-* --setcont {off | on}
+--setinfo {off | on}
+--setcont {off | on}
 "shortpath off"
 "shortpath on"
 "reboot"
@@ -46,8 +46,8 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "analog check on"
 "analog check off"
 "batt factor "
-* --board led {on | off}
-* --track {on | off}
+--board led {on | off}
+--track {on | off}
 "gps on"
 "gps off"
 "gps reset"
@@ -85,7 +85,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "webpwd "
 "webtimer 0"
 "setname "
-* --mesh {on | off}
+--mesh {on | off}
 "extudp on"
 "extudp off"
 "extudpip"
@@ -171,10 +171,9 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 * --seset
 * --wifiset
 * --nodeset
-"analogset"
+* --analogset
 * --aprsset
 "conffin"
-"regex"
 "parm "
 "unit "
 "format "
