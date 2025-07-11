@@ -172,7 +172,7 @@ Derzeit wird offiziell nur ein **INA226** (Spannung[V]-Strom[A]-Leistung[W] Sens
 |---|---|---|---|
 | INA226 | I²C | 40 | /U=vbus[V], /I=vcurrent[A] /V=5<br>BLE: ... |
 
-#### 2.1.3) Digital-I/O
+#### 2.1.3) Digital-I/O MCP23017
 Es wird ein **MCP23017** 16-Pin-I/O auf **I²C** Addr=**0x20** unterstützt.  
 Die 16 IOs sind durch A0..A7, B0..B7 gekennzeichnet.
 Die Steuerung ist via **Terminal**, **BLE** & **UDP** (Web-Client) möglich.  
