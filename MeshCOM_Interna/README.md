@@ -47,6 +47,8 @@ schwieriger gestaltet.
 | @A | bb bb bb bb | bb bb bb bb bb bb |
 |---|---|---|
 
+siehe hier: https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/MeshCom-ACK.md#meshcom-ack-system-dokumentation
+
 #### 1.1.3) response Messages
 ...  
 ...  
@@ -68,6 +70,9 @@ Folgende Typen (Value) sind derzeit bekannt:
 * **"W"** == `--wx` | `--weather`
 * **"G"** == `--pos`
 * **"SA"** == `--aprsset`
+* **"IO"** == `--io`
+* **"TM"** == `--tel`
+* **"AN"** == `--analogset`
 * **"MH"**
 
 
