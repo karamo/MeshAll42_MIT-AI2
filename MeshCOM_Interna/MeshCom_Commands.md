@@ -3,7 +3,9 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 
 * Alle Befehle werden mit **`"--"`** eingeleitet und sind via Terminal und BLE absetzbar.
 * Einzelne Befehle sind mit **`"*"`** gekennzeichnet. Diese sind hier https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/MeshCom-Commands_info.md genauer beschrieben.
-* Bei Befehlen, die ein **`" "`** (Leerzeichen) vor dem **"** haben, sind weitere Parameter erforderlich.
+* Manche einfachen Befehle sind hier in der vollen Syntax (Mengenschreibweise) bereits ausgeführt.
+* Mengenschreibweise: **"{ }"** kennzeichnet eine Menge, **"|"** kennzeichnet alternative Elemente (oder), **".."** kennzeichnet von/bis, ein **","** Trennung von Elementen der Menge.
+* Bei Befehlen, die ein **`" "`** (Leerzeichen) vor dem **"** haben, sind weitere Parameter erforderlich. Dies ist aber nicht bei allen solchen Befehlen konsequent durchgeführt.
 * **Disclamer**: manche Befehle sind u.U. nicht für normale Verwendung verfügbar u/o unterliegen bestimmter Einschränkungen!
 
 ## FW 4.35a.07.10
@@ -16,12 +18,8 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "postime "
 "volt"
 "proz"
-"setinfo off"
-"setinfo on"
-"setcont off"
-"setcont on"
-"setretx off"
-"setretx on"
+* --setinfo {off | on}
+* --setcont {off | on}
 "shortpath off"
 "shortpath on"
 "reboot"
@@ -33,8 +31,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "msg"
 "t5 on"
 "t5 off"
-"display on"
-"display off"
+--display {on | off}
 "button on"
 "button off"
 "button gpio "
@@ -49,10 +46,8 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "analog check on"
 "analog check off"
 "batt factor "
-"board led on"
-"board led off"
-"track on"
-"track off"
+* --board led {on | off}
+* --track {on | off}
 "gps on"
 "gps off"
 "gps reset"
@@ -90,8 +85,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "webpwd "
 "webtimer 0"
 "setname "
-"mesh on"
-"mesh off"
+* --mesh {on | off}
 "extudp on"
 "extudp off"
 "extudpip"
@@ -174,11 +168,11 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "hey"
 "showi2c"
 "setgrc"
-"seset"
-"wifiset"
-"nodeset"
+* --seset
+* --wifiset
+* --nodeset
 "analogset"
-"aprsset"
+* --aprsset
 "conffin"
 "regex"
 "parm "
@@ -187,7 +181,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "eqns "
 "values "
 "ptime "
-"tel"
+* --tel
 ```
 
 ___
