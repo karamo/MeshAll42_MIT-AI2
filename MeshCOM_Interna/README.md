@@ -1,4 +1,4 @@
-# MeshCOM FW V 4.xx - Interna
+# MeshCOM FW 4.xx - Interna
 Hier werden die "Geheimnisse" der Kommunikation mit der [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) 
 via BLE aufgezeigt, da zum Zeitpunkt der Entwicklung der APP keine aureichenden, detailierten Infos verfügbar waren.
 
