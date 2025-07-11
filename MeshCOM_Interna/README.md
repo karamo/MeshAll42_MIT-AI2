@@ -179,7 +179,7 @@ Die Steuerung ist via **Terminal**, **BLE** & **UDP** (Web-Client) möglich.
 
 | Type | IO | Addr | Messwerte als BLE-JSON Paket |
 |---|---|---|---|
-| MCP23017 | I²C | 20 | D{"TYP":"IO","MCP23017":true,"AxOUT":"00000000","AxVAL":"11111111","BxOUT":"00000000","BxVAL":"11111111"} |
+| MCP23017 | I²C | 20 | D{"TYP":"IO","MCP23017":true,"AxOUT":"00000000","AxVAL":"11111111", "BxOUT":"00000000","BxVAL":"11111111"} |
 
 | Parameter | |
 |---|---|
