@@ -1,4 +1,4 @@
-# MeshCom-Commands FW V 4.xx
+# MeshCom-Commands FW 4.xx
 Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ).
 
 * Alle Befehle werden mit **`"--"`** eingeleitet und sind via Terminal und BLE absetzbar.
