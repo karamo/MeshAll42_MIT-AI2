@@ -6,9 +6,10 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 * Manche einfachen Befehle sind hier in der vollen Syntax (Mengenschreibweise) bereits ausgeführt.
 * Mengenschreibweise: **"{ }"** kennzeichnet eine Menge, **"|"** kennzeichnet alternative Elemente (oder), **".."** kennzeichnet von/bis, ein **","** Trennung von Elementen der Menge.
 * Bei Befehlen, die ein **`" "`** (Leerzeichen) vor dem **"** haben, sind weitere Parameter erforderlich. Dies ist aber nicht bei allen solchen Befehlen konsequent durchgeführt.
+* Bei einigen Befehlen gibt es den Parameter **"none"** mit dem ein String/Wert gelöscht werden kann.
 * **Disclamer**: manche Befehle sind u.U. nicht für normale Verwendung verfügbar u/o unterliegen bestimmter Einschränkungen!
 
-## FW 4.35a.07.10
+## FW 4.35a.07.13
 
 ```
 "utcoff"
@@ -20,8 +21,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "proz"
 --setinfo {off | on}
 --setcont {off | on}
-"shortpath off"
-"shortpath on"
+--shortpath {off | on}
 "reboot"
 "spectrum"
 "ota-update"
@@ -29,12 +29,9 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "info"
 "all"
 "msg"
-"t5 on"
-"t5 off"
+--t5 {on | off}
 --display {on | off}
-"button on"
-"button off"
-"button gpio "
+--button {on | off | gpio }
 "analog gpio "
 "analog factor "
 "analog alpha "
@@ -48,9 +45,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "batt factor "
 --board led {on | off}
 --track {on | off}
-"gps on"
-"gps off"
-"gps reset"
+--gps {on | off | reset}
 "bleshort"
 "blelong"
 "save"
@@ -69,42 +64,25 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "680 off"
 "811 off"
 "nomsgall off"
-"lps33 on"
-"lps33 off"
-"onewire on"
-"onewire off"
-"onewire gpio "
+--lps33 {on | off}
+--onewire {on | off | gpio }
 "setpress"
-"gateway on"
-"gateway off"
-"gateway pos"
-"gateway nopos"
-"gateway srv "
-"webserver on"
-"webserver off"
+--gateway {on | off | pos | nopos | srv }
+--webserver {on | off}
 "webpwd "
 "webtimer 0"
 "setname "
 --mesh {on | off}
-"extudp on"
-"extudp off"
+--extudp {on | off}
 "extudpip"
-"debug on"
-"debug off"
-"loradebug on"
-"loradebug off"
-"setboostedgain on"
-"setboostedgain off"
-"bledebug on"
-"bledebug off"
-"wxdebug on"
-"wxdebug off"
-"gpsdebug on"
-"gpsdebug off"
-"softserdebug on"
-"softserdebug off"
-"softserread on"
-"softserread off"
+--debug {on | off}
+--loradebug {on | off}
+--setboostedgain {on | off}
+--bledebug {on | off}
+--wxdebug {on | off}
+--gpsdebug {on | off}
+--softserdebug {on | off}
+--softserread {on | off}
 "softser on"
 "softser off"
 "softser send"
@@ -121,13 +99,15 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "softser xml"
 "passwd "
 "btcode "
-"pos"
-"weather"
-"wx"
-"sendhey"
-"sendpos"
-"sendtele"
-"sendtrack"
+--pos
+"tempoff in "
+"tempoff out "
+--weather
+--wx
+--sendhey
+--sendpos
+--sendtele
+--sendtrack
 "symid"
 "symcd"
 "atxt "
@@ -135,8 +115,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "setudpcall "
 "setssid "
 "setpwd "
-"wifiap on"
-"wifiap off"
+--wifiap {on | off}
 "setownip "
 "setowngw "
 "setownms "
@@ -162,11 +141,11 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "specstep "
 "specsamples "
 "lora"
-"mheard"
-"mh"
+--mheard
+--mh
 "path"
 "hey"
-"showi2c"
+--showi2c
 "setgrc"
 * --seset
 * --wifiset
@@ -184,4 +163,4 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 ```
 
 ___
-***:copyright: 11.7.2025 by OE3WAS - Wolfgang***
+***Stand: 13.7.2025 by OE3WAS - Wolfgang***
