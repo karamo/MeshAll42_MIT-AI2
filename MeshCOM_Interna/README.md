@@ -158,11 +158,11 @@ Weiter Parameter sind: **Luftqualität**, **CO<sub>2</sub>** [ppm] u.a.
 
 | Type | IO | Addr | Messwerte |
 |---|---|---|---|
-| BMP280 | I²C | 76 | T* [°C] - P [hPa]<br>/T=[°C] /P=[hPa]<br>BLE: ... |
+| BMP280 | I²C | 77 | T* [°C] - P [hPa]<br>/T=[°C] /P=[hPa]<br>BLE: ... |
 | BME280 | I²C | 76 | T* [°C] - H [%rH] - P [hPa]<br>/T=[°C] /H=[%rH] /P=[hPa] /Q=[hPa]<br>BLE: ...|
-| BMP390 | I²C | ...  | ... |
+| BMP390 | I²C | 77 | T [°C] - P [hPa]<br>...|
 | BME680 | I²C | 76/77 | T [°C] - H [%rH] - P [hPa] - GASres [kΩ]<br>/T=[°C] /H=[%rH] /P=[hPa] /F=[m] /G=[kΩ] /V=3<br>BLE: ... |
-| AHT20 | I²C | ... | ... |
+| AHT20 | I²C | 38 | T [°C] - H [%rH]<br>... |
 | DS18B20 | 1-W | -- | T [°C]<br>/O=[°C]<br>BLE: ... |
 | MCU811 | I²C | 5A | CO<sub>2</sub> [ppm]<br>/C=[ppm] /V=2<br>BLE: ... |
 
