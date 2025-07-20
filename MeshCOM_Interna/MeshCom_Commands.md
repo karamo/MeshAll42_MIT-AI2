@@ -9,7 +9,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 * Bei einigen Befehlen gibt es den Parameter **"none"** mit dem ein String/Wert gelöscht werden kann.
 * **Disclamer**: manche Befehle sind u.U. nicht für normale Verwendung verfügbar u/o unterliegen bestimmter Einschränkungen!
 
-## FW 4.35a.07.13
+## FW 4.35c.07.20
 
 ```
 "utcoff"
@@ -49,21 +49,14 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "bleshort"
 "blelong"
 "save"
-"bmp on"
-"bme on"
-"680 on"
-"811 on"
-"390 on"
-"aht20 on"
-"nomsgall on"
+--bmp {on | off}
+--bme {on | off}
+--680 {on | off}
+--811 {on | off}
+--390 {on | off}
+--aht20 {on | off}
+--nomsgall {on | off}
 "bmx off"
-"bme off"
-"bmp off"
-"390 off"
-"aht20 off"
-"680 off"
-"811 off"
-"nomsgall off"
 --lps33 {on | off}
 --onewire {on | off | gpio }
 "setpress"
@@ -163,4 +156,4 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 ```
 
 ___
-***Stand: 13.7.2025 by OE3WAS - Wolfgang***
+***Stand: 20.7.2025 by OE3WAS - Wolfgang***
