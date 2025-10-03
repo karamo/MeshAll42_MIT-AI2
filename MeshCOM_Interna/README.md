@@ -2,6 +2,9 @@
 Hier werden die "Geheimnisse" der Kommunikation mit der [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ) 
 via BLE aufgezeigt, da zum Zeitpunkt der Entwicklung der APP keine aureichenden, detailierten Infos verfügbar waren.
 
+**!!! Immer das Datum der letzten Aktualisierung am Ende der Seiten beachten !!!  
+!!! Neuere FW-Versionen können geänderte u/o erweiterte Befehle enthalten. !!!**
+
 ## 1) Das Geheimnis der BLE-Pakete
 
 * (FW -> BLE -> APP) Arten und Aufbau der Pakete
@@ -205,3 +208,4 @@ Die Steuerung ist via **Terminal**, **BLE** & **UDP** (Web-Client) möglich.
 
 ___
 ***:copyright: 11.7.2025 by OE3WAS - Wolfgang***
+
