@@ -31,7 +31,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "msg"
 --t5 {on | off}
 --display {on | off}
---button {on | off | gpio }
+--button {on | off | gpio}
 "analog gpio "
 "analog factor "
 "analog alpha "
@@ -58,9 +58,9 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 --nomsgall {on | off}
 "bmx off"
 --lps33 {on | off}
---onewire {on | off | gpio }
+--onewire {on | off | gpio}
 "setpress"
---gateway {on | off | pos | nopos | srv }
+--gateway {on | off | pos | nopos | srv}
 --webserver {on | off}
 "webpwd "
 "webtimer 0"
