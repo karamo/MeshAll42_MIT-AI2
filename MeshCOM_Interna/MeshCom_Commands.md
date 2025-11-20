@@ -123,7 +123,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 * --setout {A0..A7,B0..B7} {high | low}
 * --setio  {A0..A7,B0..B7} {in | out}
 "setctry "
-"wifitxpower "
+* --wifitxpower {2..20}
 "txpower "
 "txfreq "
 "txbw "
@@ -156,4 +156,4 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 ```
 
 ___
-***Stand: 20.7.2025 by OE3WAS - Wolfgang***
+***Stand: 22.11.2025 by OE3WAS - Wolfgang***
