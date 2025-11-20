@@ -13,7 +13,7 @@ https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/README.md#
 
 In Übereinstimmung mit diesen Quellen gelten folgende Infos für **ESP32** & **ESP32-S3** gleichermaßen.
 
-Der Aufruf der Funktion **--WiFiTXpower dBm** bewirkt `esp_wifi_set_max_tx_power(int8_t power);`  
+Der Aufruf der Funktion **--WiFiTXpower {2..20}** (Angabe der gewünschten Sendeleistung in [dBm]) bewirkt `esp_wifi_set_max_tx_power(int8_t power);`  
 und setzt die Sendeleistung von WiFi, wobei **power = dBm * 4** bzw. **TXpower[dBm] = power * 0,25 dBm** gilt.
 
 Das Mapping zwischen dem Wert von **power** und der Sendeleistung in **dBm** ist wie folgt definiert:  
