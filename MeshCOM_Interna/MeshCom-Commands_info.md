@@ -8,8 +8,8 @@ https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/README.md#
 ## • WiFiTXpower
 
 **Quellen:**  
-• https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/network/esp_wifi.html#_CPPv425esp_wifi_set_max_tx_power6int8_t  
-• https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/network/esp_wifi.html#_CPPv425esp_wifi_set_max_tx_power6int8_t
+* https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/network/esp_wifi.html#_CPPv425esp_wifi_set_max_tx_power6int8_t
+* https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/network/esp_wifi.html#_CPPv425esp_wifi_set_max_tx_power6int8_t
 
 In Übereinstimmung mit diesen Quellen gelten folgende Infos für **ESP32** & **ESP32-S3** gleichermaßen.
 
