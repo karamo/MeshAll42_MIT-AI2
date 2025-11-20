@@ -20,7 +20,7 @@ Das Mapping zwischen dem Wert von **power** und der Sendeleistung in **dBm** ist
 ![Image](https://github.com/user-attachments/assets/4d01db29-f526-4887-9685-a99afb86d944)
 
 In **command_functions.cpp**
-* Eingabe der Leistung in **dBm** im Bereich **[2..20]** ist anschaulicher.
+* Eingabe der Leistung in **dBm** im Bereich **{2..20}** ist anschaulicher.
 * **WiFiTXpower** hat nichts mit **TX_POWER_MIN, TX_POWER_MAX** zu tun, welche für **LoRa** gelten.  
 * Änderung von **WiFiTXpower** erfordert ein **REBOOT**.
 
