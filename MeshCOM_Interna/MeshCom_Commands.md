@@ -155,7 +155,7 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 * --tel
 ```
 
-ungeordnet weitere in nachfolgenden Versionen:
---shunt {0.02 .. 0.5} Shunt-Widerstand am INA226, kann auch zur Kalibrierung verwendet werden.
+ungeordnet weitere in nachfolgenden Versionen:  
+`--shunt {0.02 .. 0.5}` Shunt-Widerstand am INA226, kann auch zur Kalibrierung verwendet werden.
 ___
 ***Stand: 24.11.2025 by OE3WAS - Wolfgang***
