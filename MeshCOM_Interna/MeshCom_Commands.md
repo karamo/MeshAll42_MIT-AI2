@@ -1,7 +1,7 @@
 # MeshCom-Commands FW 4.xx
 Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom-FW**  ](https://github.com/icssw-org/MeshCom-Firmware  ).
 
-* Alle Befehle werden mit **`"--"`** eingeleitet und sind via Terminal und BLE absetzbar.
+* Alle Befehle werden mit **`"--"`** eingeleitet und sind via Terminal und BLE absetzbar, ebenso über WebClient, wenn WebServer ON ist.
 * Einzelne Befehle sind mit **`"*"`** gekennzeichnet. Diese sind hier https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/MeshCom-Commands_info.md genauer beschrieben.
 * Manche einfachen Befehle sind hier in der vollen Syntax (Mengenschreibweise) bereits ausgeführt.
 * Mengenschreibweise: **"{ }"** kennzeichnet eine Menge, **"|"** kennzeichnet alternative Elemente (oder), **".."** kennzeichnet von/bis, ein **","** Trennung von Elementen der Menge.
@@ -17,16 +17,16 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "maxv"
 "posshot"
 "postime "
-"volt"
-"proz"
+--volt
+--proz
 --setinfo {off | on}
 --setcont {off | on}
 --shortpath {off | on}
-"reboot"
+--reboot
 "spectrum"
 "ota-update"
-"help"
-"info"
+--help
+--info
 "all"
 "msg"
 --t5 {on | off}
@@ -112,8 +112,8 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "setownip "
 "setowngw "
 "setownms "
-"sethamnet"
-"setinet"
+--sethamnet
+--setinet
 "setlat "
 "setlon "
 "setalt "
@@ -133,13 +133,13 @@ Hier werden die jeweils verfügbaren Befehle/Commands aufgelistet von [**MeshCom
 "specend "
 "specstep "
 "specsamples "
-"lora"
+--lora
 --mheard
 --mh
-"path"
-"hey"
+--path
+--hey
 --showi2c
-"setgrc"
+"setgrc "
 * --seset
 * --wifiset
 * --nodeset
